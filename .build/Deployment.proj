@@ -96,13 +96,13 @@
 	<XmlUpdate
 		  Namespace="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd"
 			XmlFileName="$(PackageDir)\temp\FluentValidation.MVC5$(PackageSuffix)\FluentValidation.MVC5$(PackageSuffix).nuspec"
-			XPath="/package/metadata/dependencies/dependency[@id='FluentValidation$(PackageSuffix)']/@version"
+			XPath="/package/metadata/dependencies/dependency[@id='Ext.FluentValidation$(PackageSuffix)']/@version"
 			Value="%(AsmInfo.Version)" />
 
 		<XmlUpdate
 		Namespace="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd"
 		XmlFileName="$(PackageDir)\temp\FluentValidation.WebApi$(PackageSuffix)\FluentValidation.WebApi$(PackageSuffix).nuspec"
-		XPath="/package/metadata/dependencies/dependency[@id='FluentValidation$(PackageSuffix)']/@version"
+		XPath="/package/metadata/dependencies/dependency[@id='Ext.FluentValidation$(PackageSuffix)']/@version"
 		Value="%(AsmInfo.Version)" />
 
 		<Exec WorkingDirectory="$(BuildDir)\Packages" 

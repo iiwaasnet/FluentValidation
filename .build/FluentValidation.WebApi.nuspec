@@ -4,7 +4,7 @@
     <id>Ext.FluentValidation.WebApi</id>
     <version></version>
 	<title>Ext.FluentValidation.WebApi</title>
-    <authors>Sergey Ivasenko</authors>
+    <authors>Jeremy Skinner, Sergey Ivasenko</authors>
     <licenseUrl>http://fluentvalidation.codeplex.com/license</licenseUrl>
     <projectUrl>http://fluentvalidation.codeplex.com</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -13,7 +13,7 @@
     <language>en-US</language>
     <releaseNotes>https://github.com/iiwaasnet/FluentValidation/blob/master/Changelog.txt</releaseNotes>
     <dependencies>
-      <dependency id="FluentValidation" version="" />
+      <dependency id="Ext.FluentValidation" version="" />
 			<dependency id="Microsoft.AspNet.WebApi.Core" version="[5.1,5.3)" />
 		</dependencies>
   </metadata>

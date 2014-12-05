@@ -4,7 +4,7 @@
         <id>Ext.FluentValidation</id>
 	    <version></version>
         <title>Ext.FluentValidation</title>
-        <authors>Sergey Ivasenko</authors>
+        <authors>Jeremy Skinner, Sergey Ivasenko</authors>
         <licenseUrl>http://fluentvalidation.codeplex.com/license</licenseUrl>
         <projectUrl>http://fluentvalidation.codeplex.com</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
