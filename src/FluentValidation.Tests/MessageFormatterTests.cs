@@ -16,11 +16,11 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests {
-	using Internal;
-	using NUnit.Framework;
+namespace Ext.FluentValidation.Tests {
+    using Ext.FluentValidation.Internal;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class MessageFormatterTests {
 		MessageFormatter formatter;
 

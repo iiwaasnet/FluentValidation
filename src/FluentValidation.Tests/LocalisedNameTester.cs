@@ -16,14 +16,14 @@
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
 
-namespace FluentValidation.Tests {
-	using System.ComponentModel.DataAnnotations;
-	using System.Globalization;
-	using NUnit.Framework;
-	using System.Linq;
-	using Resources;
+namespace Ext.FluentValidation.Tests {
+    using System.ComponentModel.DataAnnotations;
+    using System.Linq;
+    using Ext.FluentValidation;
+    using Ext.FluentValidation.Resources;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class LocalisedNameTester {
 
 		[TearDown]

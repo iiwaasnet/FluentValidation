@@ -16,13 +16,12 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Resources {
-	using System;
-	using System.Linq.Expressions;
-	using System.Reflection;
-	using Internal;
+namespace Ext.FluentValidation.Resources {
+    using System;
+    using System.Linq.Expressions;
+    using Internal;
 
-	/// <summary>
+    /// <summary>
 	/// Represents a localized string.
 	/// </summary>
 	public class LocalizedStringSource : IStringSource {

@@ -16,10 +16,10 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Validators {
-	using Resources;
+namespace Ext.FluentValidation.Validators {
+    using Resources;
 
-	public class NotNullValidator : PropertyValidator, INotNullValidator {
+    public class NotNullValidator : PropertyValidator, INotNullValidator {
 		public NotNullValidator() : base(() => Messages.notnull_error) {
 		}
 

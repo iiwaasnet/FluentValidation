@@ -15,13 +15,13 @@
 // 
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
-namespace FluentValidation.Internal {
-	using System;
-	using System.Reflection;
-	using Attributes;
-	using Resources;
+namespace Ext.FluentValidation.Internal {
+    using System;
+    using System.Reflection;
+    using Attributes;
+    using Resources;
 
-	/// <summary>
+    /// <summary>
 	/// Keeps all the conditional compilation in one place.
 	/// </summary>
 	internal static class Compatibility {

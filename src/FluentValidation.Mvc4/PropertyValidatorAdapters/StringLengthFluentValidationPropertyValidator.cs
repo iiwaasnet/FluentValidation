@@ -1,11 +1,11 @@
 ﻿namespace FluentValidation.Mvc {
 	using System.Collections.Generic;
 	using System.Web.Mvc;
-	using Internal;
-	using Resources;
-	using Validators;
+	using Ext.FluentValidation.Internal;
+	using Ext.FluentValidation.Resources;
+	using Ext.FluentValidation.Validators;
 
-	internal class StringLengthFluentValidationPropertyValidator : FluentValidationPropertyValidator {
+    internal class StringLengthFluentValidationPropertyValidator : FluentValidationPropertyValidator {
 		private ILengthValidator LengthValidator {
 			get { return (ILengthValidator)Validator; }
 		}

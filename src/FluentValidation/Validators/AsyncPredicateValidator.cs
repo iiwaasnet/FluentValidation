@@ -1,11 +1,11 @@
-namespace FluentValidation.Validators
+namespace Ext.FluentValidation.Validators
 {
-	using System;
-	using System.Threading.Tasks;
-	using FluentValidation.Internal;
-	using FluentValidation.Resources;
+    using System;
+    using System.Threading.Tasks;
+    using Internal;
+    using Resources;
 
-	public class AsyncPredicateValidator : AsyncValidatorBase
+    public class AsyncPredicateValidator : AsyncValidatorBase
 	{
 		private readonly Func<object, object, PropertyValidatorContext, Task<bool>> predicate;
 		public AsyncPredicateValidator(Func<object, object, PropertyValidatorContext, Task<bool>> predicate)

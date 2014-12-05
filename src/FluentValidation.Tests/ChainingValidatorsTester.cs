@@ -16,13 +16,12 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests {
-	using System.Linq;
-	using Internal;
-	using NUnit.Framework;
-	using System.Collections.Generic;
+namespace Ext.FluentValidation.Tests {
+    using System.Linq;
+    using Ext.FluentValidation.Internal;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class ChainingValidatorsTester {
 		TestValidator validator;
 

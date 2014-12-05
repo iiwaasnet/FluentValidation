@@ -16,10 +16,10 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Resources {
-	using System;
+namespace Ext.FluentValidation.Resources {
+    using System;
 
-	/// <summary>
+    /// <summary>
 	/// Represents a static string.
 	/// </summary>
 	public class StaticStringSource : IStringSource {

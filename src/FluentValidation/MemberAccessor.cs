@@ -1,12 +1,12 @@
-﻿namespace FluentValidation
+﻿namespace Ext.FluentValidation
 {
-	using System;
-	using System.Linq;
-	using System.Linq.Expressions;
-	using System.Reflection;
-	using Internal;
+    using System;
+    using System.Linq;
+    using System.Linq.Expressions;
+    using System.Reflection;
+    using Internal;
 
-	public static class MemberAccessor<TObject> {
+    public static class MemberAccessor<TObject> {
 		public static MemberAccessor<TObject, TValue> From<TValue>(Expression<Func<TObject, TValue>> getExpression) {
 			return new MemberAccessor<TObject, TValue>(getExpression);
 		} 

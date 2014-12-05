@@ -16,13 +16,13 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests.Mvc5 {
-	using System.Web.Mvc;
-	using Mvc;
-	using NUnit.Framework;
-	using Results;
+namespace Ext.FluentValidation.Tests.Mvc5 {
+    using System.Web.Mvc;
+    using Ext.FluentValidation.Results;
+    using global::FluentValidation.Mvc;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class ValidationResultExtensionTests {
 		private ValidationResult result;
 

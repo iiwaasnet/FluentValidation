@@ -1,12 +1,15 @@
 // Copyright (c) Microsoft Open Technologies, Inc. All rights reserved. See License.txt in the project root for license information.
 
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Diagnostics.Contracts;
-
-namespace System.Threading.Tasks
+namespace Ext.FluentValidation.TaskHelpers
 {
-	// <summary>
+    using System;
+    using System.Collections.Generic;
+    using System.Diagnostics.CodeAnalysis;
+    using System.Diagnostics.Contracts;
+    using System.Threading;
+    using System.Threading.Tasks;
+
+    // <summary>
 	// Helpers for safely using Task libraries. 
 	// </summary>
 	internal static class TaskHelpers

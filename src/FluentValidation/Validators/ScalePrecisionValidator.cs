@@ -16,7 +16,7 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Validators
+namespace Ext.FluentValidation.Validators
 {
     using System;
     using System.Linq.Expressions;

@@ -3,10 +3,11 @@ namespace FluentValidation.Mvc {
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Web.Mvc;
-	using Internal;
-	using Results;
+	using Ext.FluentValidation;
+	using Ext.FluentValidation.Internal;
+	using Ext.FluentValidation.Results;
 
-	/// <summary>
+    /// <summary>
 	/// ModelValidator implementation that uses FluentValidation.
 	/// </summary>
 	internal class FluentValidationModelValidator : ModelValidator {

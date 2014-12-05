@@ -1,10 +1,10 @@
 ﻿namespace FluentValidation.Mvc {
 	using System.Collections.Generic;
 	using System.Web.Mvc;
-	using Internal;
-	using Validators;
+	using Ext.FluentValidation.Internal;
+	using Ext.FluentValidation.Validators;
 
-	internal class CreditCardFluentValidationPropertyValidator : FluentValidationPropertyValidator {
+    internal class CreditCardFluentValidationPropertyValidator : FluentValidationPropertyValidator {
 		public CreditCardFluentValidationPropertyValidator(ModelMetadata metadata, ControllerContext controllerContext, PropertyRule rule, IPropertyValidator validator) : base(metadata, controllerContext, rule, validator) {
 			ShouldValidate=false;
 		}

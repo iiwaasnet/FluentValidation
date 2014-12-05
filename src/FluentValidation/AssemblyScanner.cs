@@ -16,14 +16,14 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation {
-	using System;
-	using System.Collections;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Reflection;
+namespace Ext.FluentValidation {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Reflection;
 
-	/// <summary>
+    /// <summary>
 	/// Class that can be used to find all the validators from a collection of types.
 	/// </summary>
 	public class AssemblyScanner : IEnumerable<AssemblyScanner.AssemblyScanResult> {

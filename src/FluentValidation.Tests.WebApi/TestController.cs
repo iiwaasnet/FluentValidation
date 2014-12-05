@@ -15,13 +15,13 @@
 // 
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
-namespace FluentValidation.Tests.WebApi {
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Web.Http;
-	using System.Web.Http.Results;
+namespace Ext.FluentValidation.Tests.WebApi {
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Web.Http;
+    using System.Web.Http.Results;
 
-	public class TestController : ApiController {
+    public class TestController : ApiController {
 		[HttpPost]
 		public IHttpActionResult TestModel8(TestModel8 model) {
 			return OutputErrors();

@@ -16,16 +16,15 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests {
-	using System;
-	using System.Linq;
-	using System.Linq.Expressions;
-	using Internal;
-	using NUnit.Framework;
-	using Validators;
-	using System.Collections.Generic;
+namespace Ext.FluentValidation.Tests {
+    using System;
+    using System.Linq.Expressions;
+    using Ext.FluentValidation;
+    using Ext.FluentValidation.Internal;
+    using Ext.FluentValidation.Validators;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class ValidatorSelectorTests {
 	
 		[Test]

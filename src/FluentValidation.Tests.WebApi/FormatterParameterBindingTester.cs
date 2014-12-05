@@ -16,37 +16,34 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests.WebApi {
-	using System;
-	using System.Collections;
-	using System.Collections.Generic;
-	using System.Globalization;
-	using System.IO;
-	using System.Linq;
-	using System.Net;
-	using System.Net.Http;
-	using System.Net.Http.Formatting;
-	using System.Text;
-	using System.Threading;
-	using System.Threading.Tasks;
-	using System.Web;
-	using System.Web.Http;
-	using System.Web.Http.Controllers;
-	using System.Web.Http.Metadata;
-	using System.Web.Http.Metadata.Providers;
-	using System.Web.Http.ModelBinding;
-	using System.Web.Http.Validation;
+namespace Ext.FluentValidation.Tests.WebApi {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Globalization;
+    using System.IO;
+    using System.Linq;
+    using System.Net;
+    using System.Net.Http;
+    using System.Net.Http.Formatting;
+    using System.Text;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using System.Web;
+    using System.Web.Http;
+    using System.Web.Http.Controllers;
+    using System.Web.Http.Metadata;
+    using System.Web.Http.Metadata.Providers;
+    using System.Web.Http.ModelBinding;
+    using System.Web.Http.Validation;
+    using Ext.FluentValidation;
+    using Ext.FluentValidation.Attributes;
+    using Ext.FluentValidation.Results;
+    using FluentValidation.WebApi;
+    using Moq;
+    using NUnit.Framework;
 
-	using Attributes;
-
-	using FluentValidation.WebApi;
-	using FluentValidation.Results;
-
-	using Moq;
-
-	using NUnit.Framework;
-
-	[TestFixture] //TODO: Remove these tests and make sure that WebApiIntegrationTests have replaced all the tests in here
+    [TestFixture] //TODO: Remove these tests and make sure that WebApiIntegrationTests have replaced all the tests in here
 	public class FormatterParameterBindingTester {
 		FluentValidationModelValidatorProvider provider;
 		HttpActionContext actionContext;

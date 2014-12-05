@@ -16,16 +16,16 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Validators {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Threading.Tasks;
-	using FluentValidation.Internal;
-	using Resources;
-	using Results;
+namespace Ext.FluentValidation.Validators {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Resources;
+    using Results;
+    using TaskHelpers;
 
-	public class DelegatingValidator : IPropertyValidator, IDelegatingValidator {
+    public class DelegatingValidator : IPropertyValidator, IDelegatingValidator {
 		private readonly Func<object, bool> condition;
 		public IPropertyValidator InnerValidator { get; private set; }
 

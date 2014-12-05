@@ -16,15 +16,14 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation {
-	using System;
-	using System.Collections.Generic;
-	using System.Threading.Tasks;
-	using Internal;
-	using Results;
-	using Validators;
+namespace Ext.FluentValidation {
+    using System;
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+    using Results;
+    using Validators;
 
-	/// <summary>
+    /// <summary>
 	/// Defines a rule associated with a property which can have multiple validators.
 	/// </summary>
 	public interface IValidationRule {

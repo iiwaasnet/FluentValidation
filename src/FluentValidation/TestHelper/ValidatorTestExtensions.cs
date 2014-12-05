@@ -16,14 +16,14 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.TestHelper {
-	using System;
-	using System.Linq.Expressions;
-	using Internal;
-	using System.Linq;
-	using Validators;
+namespace Ext.FluentValidation.TestHelper {
+    using System;
+    using System.Linq;
+    using System.Linq.Expressions;
+    using Internal;
+    using Validators;
 
-	public static class ValidationTestExtension {
+    public static class ValidationTestExtension {
 		public static void ShouldHaveValidationErrorFor<T, TValue>(this IValidator<T> validator,
 																   Expression<Func<T, TValue>> expression, TValue value, string ruleSet = null) where T : class, new() {
 			new ValidatorTester<T, TValue>(expression, validator, value, ruleSet).ValidateError(new T());

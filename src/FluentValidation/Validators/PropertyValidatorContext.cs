@@ -16,15 +16,10 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Validators {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Reflection;
-	using Attributes;
-	using Internal;
+namespace Ext.FluentValidation.Validators {
+    using Internal;
 
-	public class PropertyValidatorContext {
+    public class PropertyValidatorContext {
 		private readonly MessageFormatter messageFormatter = new MessageFormatter();
 		private bool propertyValueSet;
 		private object propertyValue;

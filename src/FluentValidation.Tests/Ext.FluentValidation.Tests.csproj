@@ -8,8 +8,8 @@
     <ProjectGuid>{E353A6E3-5404-4E1E-B33D-4C7BAE646752}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FluentValidation.Tests</RootNamespace>
-    <AssemblyName>FluentValidation.Tests</AssemblyName>
+    <RootNamespace>Ext.FluentValidation.Tests</RootNamespace>
+    <AssemblyName>Ext.FluentValidation.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SignAssembly>false</SignAssembly>
@@ -84,9 +84,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FluentValidation\FluentValidation.csproj">
+    <ProjectReference Include="..\FluentValidation\Ext.FluentValidation.csproj">
       <Project>{DAE0249B-4F69-4AC9-9A17-AA23E0795316}</Project>
-      <Name>FluentValidation</Name>
+      <Name>Ext.FluentValidation</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

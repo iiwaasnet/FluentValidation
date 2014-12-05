@@ -1,9 +1,9 @@
-namespace FluentValidation.Resources {
-	using System;
-	using System.Reflection;
-	using Internal;
+namespace Ext.FluentValidation.Resources {
+    using System;
+    using System.Reflection;
+    using Internal;
 
-	/// <summary>
+    /// <summary>
 	/// Builds a delegate for retrieving a localised resource from a resource type and property name.
 	/// </summary>
 	public interface IResourceAccessorBuilder {

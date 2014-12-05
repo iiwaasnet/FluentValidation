@@ -16,7 +16,7 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Internal {
+namespace Ext.FluentValidation.Internal {
 	/// <summary>
 	/// Default validator selector that will execute all rules that do not belong to a RuleSet.
 	/// </summary>

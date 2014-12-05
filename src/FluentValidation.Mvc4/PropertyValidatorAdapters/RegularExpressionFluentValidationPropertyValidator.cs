@@ -1,10 +1,10 @@
 ﻿namespace FluentValidation.Mvc {
 	using System.Collections.Generic;
 	using System.Web.Mvc;
-	using Internal;
-	using Validators;
+	using Ext.FluentValidation.Internal;
+	using Ext.FluentValidation.Validators;
 
-	internal class RegularExpressionFluentValidationPropertyValidator : FluentValidationPropertyValidator {
+    internal class RegularExpressionFluentValidationPropertyValidator : FluentValidationPropertyValidator {
 		IRegularExpressionValidator RegexValidator {
 			get { return (IRegularExpressionValidator)Validator;}
 		}

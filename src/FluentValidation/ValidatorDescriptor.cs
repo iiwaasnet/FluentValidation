@@ -16,15 +16,15 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Linq.Expressions;
-	using Internal;
-	using Validators;
+namespace Ext.FluentValidation {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Linq.Expressions;
+    using Internal;
+    using Validators;
 
-	/// <summary>
+    /// <summary>
 	/// Used for providing metadata about a validator.
 	/// </summary>
 	public class ValidatorDescriptor<T> : IValidatorDescriptor {

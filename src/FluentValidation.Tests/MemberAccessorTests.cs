@@ -1,10 +1,11 @@
-﻿namespace FluentValidation.Tests
+﻿namespace Ext.FluentValidation.Tests
 {
-	using System;
-	using System.Linq.Expressions;
-	using NUnit.Framework;
+    using System;
+    using System.Linq.Expressions;
+    using Ext.FluentValidation;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class MemberAccessorTests {
 		Person person;
 

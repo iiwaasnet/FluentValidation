@@ -16,14 +16,13 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Validators {
-	using System;
-	using System.Reflection;
-	using Attributes;
-	using Internal;
-	using Resources;
+namespace Ext.FluentValidation.Validators {
+    using System;
+    using System.Reflection;
+    using Internal;
+    using Resources;
 
-	public class GreaterThanValidator : AbstractComparisonValidator {
+    public class GreaterThanValidator : AbstractComparisonValidator {
 		public GreaterThanValidator(IComparable value) : base(value, () => Messages.greaterthan_error) {
 		}
 

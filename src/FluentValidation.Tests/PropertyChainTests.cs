@@ -16,13 +16,13 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests {
-	using System;
-	using System.Linq.Expressions;
-	using Internal;
-	using NUnit.Framework;
+namespace Ext.FluentValidation.Tests {
+    using System;
+    using System.Linq.Expressions;
+    using Ext.FluentValidation.Internal;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class PropertyChainTests {
 		PropertyChain chain;
 

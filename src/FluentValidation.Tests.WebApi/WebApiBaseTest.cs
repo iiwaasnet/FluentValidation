@@ -15,19 +15,19 @@
 // 
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
-namespace FluentValidation.Tests.WebApi {
-	using System;
-	using System.Collections.Generic;
-	using System.IO;
-	using System.Net.Http;
-	using System.Net.Http.Headers;
-	using System.Text;
-	using System.Threading;
-	using System.Threading.Tasks;
-	using System.Web.Http;
-	using FluentValidation.WebApi;
+namespace Ext.FluentValidation.Tests.WebApi {
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+    using System.Net.Http;
+    using System.Net.Http.Headers;
+    using System.Text;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using System.Web.Http;
+    using FluentValidation.WebApi;
 
-	public abstract class WebApiBaseTest {
+    public abstract class WebApiBaseTest {
 		protected List<SimpleError> InvokeTest<T>(string input, string contentType = "application/x-www-form-urlencoded") {
 			const string baseAddress = "http://dummyname/";
 

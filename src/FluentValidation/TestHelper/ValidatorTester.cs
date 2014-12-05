@@ -16,12 +16,12 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.TestHelper {
-	using System;
-	using System.Linq;
-	using System.Linq.Expressions;
+namespace Ext.FluentValidation.TestHelper {
+    using System;
+    using System.Linq;
+    using System.Linq.Expressions;
 
-	public class ValidatorTester<T, TValue> where T : class {
+    public class ValidatorTester<T, TValue> where T : class {
 		private readonly IValidator<T> validator;
 		private readonly TValue value;
 		private readonly MemberAccessor<T, TValue> accessor;
@@ -36,7 +36,7 @@ namespace FluentValidation.TestHelper {
 
 		public void ValidateNoError(T instanceToValidate) {
 			accessor.Set(instanceToValidate, value);
-			var count = validator.Validate(instanceToValidate, ruleSet: ruleSet).Errors.Count(x => x.PropertyName == accessor.Member.Name);
+            var count = validator.Validate(instanceToValidate, ruleSet: ruleSet).Errors.Count(x => x.PropertyName == accessor.Member.Name);
 
 			if (count > 0) {
 				throw new ValidationTestException(string.Format("Expected no validation errors for property {0}", accessor.Member.Name));

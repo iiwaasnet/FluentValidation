@@ -16,13 +16,13 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Internal {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Linq.Expressions;
+namespace Ext.FluentValidation.Internal {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Linq.Expressions;
 
-	/// <summary>
+    /// <summary>
 	/// Selects validators that are associated with a particular property.
 	/// </summary>
 	public class MemberNameValidatorSelector : IValidatorSelector {

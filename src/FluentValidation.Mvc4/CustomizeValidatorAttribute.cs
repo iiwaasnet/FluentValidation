@@ -21,9 +21,9 @@ namespace FluentValidation.Mvc {
 	using System.Collections.Generic;
 	using System.Reflection;
 	using System.Web.Mvc;
-	using Internal;
+	using Ext.FluentValidation.Internal;
 
-	public class CustomizeValidatorAttribute : CustomModelBinderAttribute, IModelBinder {
+    public class CustomizeValidatorAttribute : CustomModelBinderAttribute, IModelBinder {
 		public string RuleSet { get; set; }
 		public string Properties { get; set; }
 		public Type Interceptor { get; set; }

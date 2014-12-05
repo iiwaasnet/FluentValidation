@@ -1,11 +1,11 @@
-namespace FluentValidation.Tests {
-	using System;
-	using System.Linq;
-	using Internal;
-	using NUnit.Framework;
-	using Validators;
+namespace Ext.FluentValidation.Tests {
+    using System.Linq;
+    using Ext.FluentValidation;
+    using Ext.FluentValidation.Internal;
+    using Ext.FluentValidation.Validators;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class StandalonePropertyValidationTester {
 		[Test]
 		public void Should_validate_property_value_without_instance() {

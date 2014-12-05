@@ -16,15 +16,13 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Validators {
-	using System;
-	using System.Linq.Expressions;
-	using System.Reflection;
-	using Attributes;
-	using Internal;
-	using Results;
+namespace Ext.FluentValidation.Validators {
+    using System;
+    using System.Linq.Expressions;
+    using System.Reflection;
+    using Internal;
 
-	public abstract class AbstractComparisonValidator : PropertyValidator, IComparisonValidator {
+    public abstract class AbstractComparisonValidator : PropertyValidator, IComparisonValidator {
 
 		readonly Func<object, object> valueToCompareFunc;
 

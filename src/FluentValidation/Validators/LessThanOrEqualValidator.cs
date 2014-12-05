@@ -16,15 +16,13 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Validators {
-	using System;
-	using System.Linq.Expressions;
-	using System.Reflection;
-	using Attributes;
-	using Internal;
-	using Resources;
+namespace Ext.FluentValidation.Validators {
+    using System;
+    using System.Reflection;
+    using Internal;
+    using Resources;
 
-	public class LessThanOrEqualValidator : AbstractComparisonValidator {
+    public class LessThanOrEqualValidator : AbstractComparisonValidator {
 		public LessThanOrEqualValidator(IComparable value) : base(value, () => Messages.lessthanorequal_error) {
 		}
 

@@ -16,10 +16,11 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests {
-	using NUnit.Framework;
+namespace Ext.FluentValidation.Tests {
+    using Ext.FluentValidation;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class CascadingFailuresTester {
 		TestValidator validator;
 

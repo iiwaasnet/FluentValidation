@@ -7,8 +7,8 @@
     <ProjectGuid>{3D0D39A1-DCD0-4B41-BD2C-AABB5E7C7126}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FluentValidation.WebApi</RootNamespace>
-    <AssemblyName>FluentValidation.WebApi</AssemblyName>
+    <RootNamespace>Ext.FluentValidation.WebApi</RootNamespace>
+    <AssemblyName>Ext.FluentValidation.WebApi</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -72,9 +72,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FluentValidation\FluentValidation.csproj">
+    <ProjectReference Include="..\FluentValidation\Ext.FluentValidation.csproj">
       <Project>{DAE0249B-4F69-4AC9-9A17-AA23E0795316}</Project>
-      <Name>FluentValidation</Name>
+      <Name>Ext.FluentValidation</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

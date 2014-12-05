@@ -16,22 +16,23 @@
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
 
-namespace FluentValidation.Tests.Mvc5 {
-	using System;
-	using System.Collections;
-	using System.Collections.Generic;
-	using System.Globalization;
-	using System.Linq;
-	using System.Linq.Expressions;
-	using System.Web;
-	using System.Web.Mvc;
-	using Internal;
-	using Moq;
-	using Mvc;
-	using NUnit.Framework;
-	using Validators;
+namespace Ext.FluentValidation.Tests.Mvc5 {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Globalization;
+    using System.Linq;
+    using System.Linq.Expressions;
+    using System.Web;
+    using System.Web.Mvc;
+    using Ext.FluentValidation;
+    using Ext.FluentValidation.Internal;
+    using Ext.FluentValidation.Validators;
+    using global::FluentValidation.Mvc;
+    using Moq;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class ClientsideMessageTester {
 		InlineValidator<TestModel> validator;
 		ControllerContext controllerContext;

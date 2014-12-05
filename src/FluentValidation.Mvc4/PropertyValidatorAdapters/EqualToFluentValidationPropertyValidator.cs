@@ -2,10 +2,11 @@
 	using System.Collections.Generic;
 	using System.Reflection;
 	using System.Web.Mvc;
-	using Internal;
-	using Validators;
+	using Ext.FluentValidation;
+	using Ext.FluentValidation.Internal;
+	using Ext.FluentValidation.Validators;
 
-	internal class EqualToFluentValidationPropertyValidator : FluentValidationPropertyValidator {
+    internal class EqualToFluentValidationPropertyValidator : FluentValidationPropertyValidator {
 		EqualValidator EqualValidator {
 			get { return (EqualValidator)Validator; }
 		}

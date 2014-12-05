@@ -16,21 +16,21 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.WebApi
+namespace Ext.FluentValidation.WebApi
 {
-	using System;
-	using System.Collections;
-	using System.Collections.Generic;
-	using System.Diagnostics.Contracts;
-	using System.Globalization;
-	using System.Linq;
-	using System.Net.Http.Formatting;
-	using System.Web.Http.Controllers;
-	using System.Web.Http.Metadata;
-	using System.Web.Http.ModelBinding;
-	using System.Web.Http.Validation;
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Diagnostics.Contracts;
+    using System.Globalization;
+    using System.Linq;
+    using System.Net.Http.Formatting;
+    using System.Web.Http.Controllers;
+    using System.Web.Http.Metadata;
+    using System.Web.Http.ModelBinding;
+    using System.Web.Http.Validation;
 
-	/// <summary>
+    /// <summary>
 	/// Recursively validate an object.
 	/// Is just a copy of the DefaultBodyModelValidator but includes a "patch" for the FluentValidationModelValidator
 	/// When the whole model is validated the errors get added to the ModelState grouped by property instead of all under

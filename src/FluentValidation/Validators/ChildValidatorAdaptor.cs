@@ -1,11 +1,12 @@
-namespace FluentValidation.Validators {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Threading.Tasks;
-	using Results;
+namespace Ext.FluentValidation.Validators {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Results;
+    using TaskHelpers;
 
-	public class ChildValidatorAdaptor : NoopPropertyValidator {
+    public class ChildValidatorAdaptor : NoopPropertyValidator {
 		readonly IValidator validator;
 
 		static readonly IEnumerable<ValidationFailure> EmptyResult = Enumerable.Empty<ValidationFailure>();

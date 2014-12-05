@@ -16,14 +16,12 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests
+namespace Ext.FluentValidation.Tests
 {
-    using System;
     using System.Globalization;
-    using System.Linq;
     using System.Threading;
+    using Ext.FluentValidation.Validators;
     using NUnit.Framework;
-    using Validators;
 
     [TestFixture]
     public class ScalePrecisionValidatorTests

@@ -16,10 +16,10 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Attributes {
-	using System;
+namespace Ext.FluentValidation.Attributes {
+    using System;
 
-	/// <summary>
+    /// <summary>
 	/// Validator attribute to define the class that will describe the Validation rules
 	/// </summary>
 	[AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = true)]

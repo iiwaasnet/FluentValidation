@@ -16,18 +16,18 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation {
-	using System;
-	using System.Collections;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Linq.Expressions;
-	using System.Threading.Tasks;
-	using Internal;
-	using Results;
-	using Validators;
+namespace Ext.FluentValidation {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Linq.Expressions;
+    using System.Threading.Tasks;
+    using Internal;
+    using Results;
+    using TaskHelpers;
 
-	/// <summary>
+    /// <summary>
 	/// Base class for entity validator classes.
 	/// </summary>
 	/// <typeparam name="T">The type of the object being validated</typeparam>
@@ -123,7 +123,7 @@ namespace FluentValidation {
 			context.Guard("Cannot pass null to Validate");
 			var failures = new List<ValidationFailure>();
 			
-			return TaskHelpers.Iterate(
+			return TaskHelpers.TaskHelpers.Iterate(
 				nestedValidators
 				.Select(v => v.ValidateAsync(context).Then(fs => failures.AddRange(fs), runSynchronously: true))
 			).Then(

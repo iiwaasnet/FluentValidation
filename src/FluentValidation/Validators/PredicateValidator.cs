@@ -16,14 +16,11 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Validators {
-	using System;
-	using Attributes;
-	using Internal;
-	using Resources;
-	using Results;
+namespace Ext.FluentValidation.Validators {
+    using Internal;
+    using Resources;
 
-	public class PredicateValidator : PropertyValidator, IPredicateValidator {
+    public class PredicateValidator : PropertyValidator, IPredicateValidator {
         public delegate bool Predicate(object instanceToValidate, object propertyValue, PropertyValidatorContext propertyValidatorContext);
 
 		private readonly Predicate predicate;

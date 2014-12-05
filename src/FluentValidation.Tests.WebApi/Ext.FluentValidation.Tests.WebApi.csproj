@@ -7,8 +7,8 @@
     <ProjectGuid>{5BA9F9F4-E12A-4A2E-B05C-FABAA6CAD1D1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FluentValidation.Tests.WebApi</RootNamespace>
-    <AssemblyName>FluentValidation.Tests.WebApi</AssemblyName>
+    <RootNamespace>Ext.FluentValidation.Tests.WebApi</RootNamespace>
+    <AssemblyName>Ext.FluentValidation.Tests.WebApi</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -80,13 +80,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FluentValidation.WebApi\FluentValidation.WebApi.csproj">
+    <ProjectReference Include="..\FluentValidation.WebApi\Ext.FluentValidation.WebApi.csproj">
       <Project>{3d0d39a1-dcd0-4b41-bd2c-aabb5e7c7126}</Project>
-      <Name>FluentValidation.WebApi</Name>
+      <Name>Ext.FluentValidation.WebApi</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FluentValidation\FluentValidation.csproj">
+    <ProjectReference Include="..\FluentValidation\Ext.FluentValidation.csproj">
       <Project>{dae0249b-4f69-4ac9-9a17-aa23e0795316}</Project>
-      <Name>FluentValidation</Name>
+      <Name>Ext.FluentValidation</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

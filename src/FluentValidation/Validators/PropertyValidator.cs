@@ -16,19 +16,17 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-using System.Threading;
+namespace Ext.FluentValidation.Validators {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Linq.Expressions;
+    using System.Threading.Tasks;
+    using Resources;
+    using Results;
+    using TaskHelpers;
 
-namespace FluentValidation.Validators {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Linq.Expressions;
-	using System.Threading.Tasks;
-	using FluentValidation.Internal;
-	using Resources;
-	using Results;
-
-	public abstract class PropertyValidator : IPropertyValidator {
+    public abstract class PropertyValidator : IPropertyValidator {
 		private readonly List<Func<object, object, object>> customFormatArgs = new List<Func<object, object, object>>();
 		private IStringSource errorSource;
 

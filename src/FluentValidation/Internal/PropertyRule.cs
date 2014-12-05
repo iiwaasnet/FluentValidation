@@ -16,18 +16,19 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Internal {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Linq.Expressions;
-	using System.Reflection;
-	using System.Threading.Tasks;
-	using Resources;
-	using Results;
-	using Validators;
+namespace Ext.FluentValidation.Internal {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Linq.Expressions;
+    using System.Reflection;
+    using System.Threading.Tasks;
+    using Resources;
+    using Results;
+    using TaskHelpers;
+    using Validators;
 
-	/// <summary>
+    /// <summary>
 	/// Defines a rule associated with a property.
 	/// </summary>
 	public class PropertyRule : IValidationRule {

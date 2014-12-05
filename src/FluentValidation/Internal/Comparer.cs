@@ -16,10 +16,10 @@
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
 
-namespace FluentValidation.Internal {
-	using System;
+namespace Ext.FluentValidation.Internal {
+    using System;
 
-	public static class Comparer {
+    public static class Comparer {
 		/// <summary>
 		/// Tries to compare the two objects.
 		/// </summary>

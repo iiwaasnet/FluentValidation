@@ -16,18 +16,18 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests {
-	using System;
-	using System.Diagnostics;
-	using System.Globalization;
-	using System.Linq;
-	using System.Threading;
-	using Internal;
-	using NUnit.Framework;
-	using Resources;
-	using Validators;
+namespace Ext.FluentValidation.Tests {
+    using System.Diagnostics;
+    using System.Globalization;
+    using System.Linq;
+    using System.Threading;
+    using Ext.FluentValidation;
+    using Ext.FluentValidation.Internal;
+    using Ext.FluentValidation.Validators;
+    using NUnit.Framework;
+    using Resources;
 
-	[TestFixture]
+    [TestFixture]
 	public class LocalisedMessagesTester {
 
 		[TearDown]

@@ -1,8 +1,9 @@
-namespace FluentValidation.Tests {
-	using Attributes;
-	using NUnit.Framework;
+namespace Ext.FluentValidation.Tests {
+    using Ext.FluentValidation;
+    using Ext.FluentValidation.Attributes;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class AttributedValidatorFactoryTester {
 		IValidatorFactory factory;
 

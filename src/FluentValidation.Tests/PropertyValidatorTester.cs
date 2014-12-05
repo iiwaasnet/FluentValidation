@@ -16,13 +16,12 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests {
-	using System;
-	using NUnit.Framework;
-	using Validators;
-	using System.Linq;
+namespace Ext.FluentValidation.Tests {
+    using System.Linq;
+    using Ext.FluentValidation.Validators;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class PropertyValidatorTester {
 		[Test]
 		public void When_passing_string_to_localizable_lambda_should_convert_to_string_accessor() {

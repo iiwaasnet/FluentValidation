@@ -16,11 +16,11 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Attributes {
-	using System;
-	using Internal;
+namespace Ext.FluentValidation.Attributes {
+    using System;
+    using Internal;
 
-	/// <summary>
+    /// <summary>
 	/// Implementation of IValidatorFactory that looks for ValidatorAttribute instances on the specified type in order to provide the validator instance.
 	/// </summary>
 	public class AttributedValidatorFactory : IValidatorFactory {

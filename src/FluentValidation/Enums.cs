@@ -16,7 +16,7 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation {
+namespace Ext.FluentValidation {
 	/// <summary>
 	/// Specifies how rules should cascade when one fails.
 	/// </summary>

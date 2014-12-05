@@ -18,13 +18,14 @@
 
 #endregion
 
-namespace FluentValidation.WebApi {
+namespace Ext.FluentValidation.WebApi {
     using System.Collections.Generic;
     using System.Linq;
     using System.Web.Http.Metadata;
     using System.Web.Http.Validation;
-    using Internal;
-    using Results;
+    using Ext.FluentValidation;
+    using Ext.FluentValidation.Internal;
+    using Ext.FluentValidation.Results;
 
     public class FluentValidationModelValidator : ModelValidator {
         readonly IValidator validator;

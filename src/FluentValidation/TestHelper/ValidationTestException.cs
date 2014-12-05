@@ -16,10 +16,10 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.TestHelper {
-	using System;
+namespace Ext.FluentValidation.TestHelper {
+    using System;
 
-	public class ValidationTestException : Exception {
+    public class ValidationTestException : Exception {
 		public ValidationTestException(string message) : base(message) {
 		}
 	}

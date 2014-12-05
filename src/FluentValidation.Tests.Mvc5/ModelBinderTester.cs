@@ -16,22 +16,23 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests.Mvc5 {
-	using System;
-	using System.Collections;
-	using System.Globalization;
-	using System.Linq;
-	using System.Threading;
-	using System.Web;
-	using System.Web.Mvc;
-	using Attributes;
-	using Internal;
-	using Moq;
-	using Mvc;
-	using NUnit.Framework;
-	using Results;
+namespace Ext.FluentValidation.Tests.Mvc5 {
+    using System;
+    using System.Collections;
+    using System.Globalization;
+    using System.Linq;
+    using System.Threading;
+    using System.Web;
+    using System.Web.Mvc;
+    using Ext.FluentValidation;
+    using Ext.FluentValidation.Attributes;
+    using Ext.FluentValidation.Internal;
+    using Ext.FluentValidation.Results;
+    using global::FluentValidation.Mvc;
+    using Moq;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class ModelBinderTester {
 		FluentValidationModelValidatorProvider provider;
 		DefaultModelBinder binder;

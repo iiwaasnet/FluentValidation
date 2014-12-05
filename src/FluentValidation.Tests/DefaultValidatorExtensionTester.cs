@@ -16,14 +16,14 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests {
-	using System.Linq;
-	using System.Threading.Tasks;
-	using Internal;
-	using NUnit.Framework;
-	using Validators;
+namespace Ext.FluentValidation.Tests {
+    using System.Linq;
+    using Ext.FluentValidation;
+    using Ext.FluentValidation.Internal;
+    using Ext.FluentValidation.Validators;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class DefaultValidatorExtensionTester {
 		private AbstractValidator<Person> validator;
 
@@ -108,13 +108,13 @@ namespace FluentValidation.Tests {
 
 		[Test]
 		public void MustAsync_should_create_AsyncPredicteValidator() {
-			validator.RuleFor(x => x.Surname).MustAsync(x => TaskHelpers.FromResult(true));
+			validator.RuleFor(x => x.Surname).MustAsync(x => TaskHelpers.TaskHelpers.FromResult(true));
 			AssertValidator<AsyncPredicateValidator>();
 		}
 
 		[Test]
 		public void MustAsync_should_create_AsyncPredicateValidator_with_context() {
-			validator.RuleFor(x => x.Surname).MustAsync((x, val) => TaskHelpers.FromResult(true));
+			validator.RuleFor(x => x.Surname).MustAsync((x, val) => TaskHelpers.TaskHelpers.FromResult(true));
 			AssertValidator<AsyncPredicateValidator>();
 		}
 
@@ -123,7 +123,7 @@ namespace FluentValidation.Tests {
 			var hasPropertyValidatorContext = false;
 			this.validator.RuleFor(x => x.Surname).MustAsync((x, val, ctx) => {
 				hasPropertyValidatorContext = ctx != null;
-				return TaskHelpers.FromResult(true);
+				return TaskHelpers.TaskHelpers.FromResult(true);
 			});
 			this.validator.ValidateAsync(new Person {
 				Surname = "Surname"

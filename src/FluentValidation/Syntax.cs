@@ -16,13 +16,11 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation {
-	using System;
-	using System.Collections.Generic;
-	using Internal;
-	using Validators;
+namespace Ext.FluentValidation {
+    using Internal;
+    using Validators;
 
-	/// <summary>
+    /// <summary>
 	/// Rule builder that starts the chain
 	/// </summary>
 	/// <typeparam name="T"></typeparam>

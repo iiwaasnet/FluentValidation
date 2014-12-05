@@ -16,10 +16,10 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests {
-	using System;
-	using System.Collections.Generic;
-	using Attributes;
+namespace Ext.FluentValidation.Tests {
+    using System;
+    using System.Collections.Generic;
+    using Ext.FluentValidation.Attributes;
 
     [Validator(typeof(TestValidator))]
 	public class Person {

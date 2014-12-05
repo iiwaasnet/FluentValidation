@@ -16,14 +16,14 @@
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
 
-namespace FluentValidation.Tests {
-	using System;
-	using System.Linq;
-	using System.Threading.Tasks;
-	using NUnit.Framework;
-	using Results;
+namespace Ext.FluentValidation.Tests {
+    using System;
+    using System.Linq;
+    using Ext.FluentValidation;
+    using Ext.FluentValidation.Results;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class SharedConditionTests {
 		class SharedConditionValidator : AbstractValidator<Person> {
 			public SharedConditionValidator() {
@@ -188,7 +188,7 @@ namespace FluentValidation.Tests {
 		public void Does_not_execute_customasync_Rule_when_condition_false()
 		{
 			var validator = new TestValidator();
-			validator.When(x => false, () => validator.CustomAsync(x => TaskHelpers.FromResult(new ValidationFailure("foo", "bar"))));
+			validator.When(x => false, () => validator.CustomAsync(x => TaskHelpers.TaskHelpers.FromResult(new ValidationFailure("foo", "bar"))));
 
 			var result = validator.ValidateAsync(new Person()).Result;
 			result.IsValid.ShouldBeTrue();
@@ -207,7 +207,7 @@ namespace FluentValidation.Tests {
 		public void Executes_customasync_rule_when_condition_true()
 		{
 			var validator = new TestValidator();
-			validator.When(x => true, () => validator.CustomAsync(x => TaskHelpers.FromResult(new ValidationFailure("foo", "bar"))));
+			validator.When(x => true, () => validator.CustomAsync(x => TaskHelpers.TaskHelpers.FromResult(new ValidationFailure("foo", "bar"))));
 
 			var result = validator.ValidateAsync(new Person()).Result;
 			result.IsValid.ShouldBeFalse();
@@ -231,7 +231,7 @@ namespace FluentValidation.Tests {
 			var validator = new TestValidator();
 			validator.When(x => true, () => {
 				validator.When(x => false, () => {
-					validator.CustomAsync(x => TaskHelpers.FromResult(new ValidationFailure("Custom", "The validation failed")));
+					validator.CustomAsync(x => TaskHelpers.TaskHelpers.FromResult(new ValidationFailure("Custom", "The validation failed")));
 				});
 			});
 			var result = validator.ValidateAsync(new Person()).Result;

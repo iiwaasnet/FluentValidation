@@ -1,7 +1,7 @@
-namespace FluentValidation.Internal {
-	using System.Collections.Generic;
+namespace Ext.FluentValidation.Internal {
+    using System.Collections.Generic;
 
-	/// <summary>
+    /// <summary>
 	/// Assists in the construction of validation messages.
 	/// </summary>
 	public class MessageFormatter {

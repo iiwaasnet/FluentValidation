@@ -15,16 +15,15 @@
 // 
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
-namespace FluentValidation.Internal {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Linq.Expressions;
-	using System.Reflection;
-	using Results;
-	using Validators;
+namespace Ext.FluentValidation.Internal {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq.Expressions;
+    using System.Reflection;
+    using Results;
+    using Validators;
 
-	public class CollectionPropertyRule<TProperty> : PropertyRule {
+    public class CollectionPropertyRule<TProperty> : PropertyRule {
 		public CollectionPropertyRule(MemberInfo member, Func<object, object> propertyFunc, LambdaExpression expression, Func<CascadeMode> cascadeModeThunk, Type typeToValidate, Type containerType) : base(member, propertyFunc, expression, cascadeModeThunk, typeToValidate, containerType) {
 		}
 

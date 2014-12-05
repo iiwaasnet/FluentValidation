@@ -16,15 +16,16 @@
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
 
-namespace FluentValidation.Tests {
-	using System.ComponentModel;
-	using System.ComponentModel.DataAnnotations;
-	using System.Globalization;
-	using System.Threading;
-	using NUnit.Framework;
-	using System.Linq;
+namespace Ext.FluentValidation.Tests {
+    using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
+    using System.Globalization;
+    using System.Linq;
+    using System.Threading;
+    using Ext.FluentValidation;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class DisplayAttributeTests {
 
 		[SetUp]

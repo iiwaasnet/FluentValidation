@@ -16,15 +16,15 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using NUnit.Framework;
-	using NUnit.Framework.Constraints;
-	using Results;
+namespace Ext.FluentValidation.Tests {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using Ext.FluentValidation.Results;
+    using NUnit.Framework;
+    using NUnit.Framework.Constraints;
 
-	//Inspired by SpecUnit's SpecificationExtensions
+    //Inspired by SpecUnit's SpecificationExtensions
 	//http://code.google.com/p/specunit-net/source/browse/trunk/src/SpecUnit/SpecificationExtensions.cs
 	public static class TestExtensions {
 		public static void ShouldEqual(this object actual, object expected) {

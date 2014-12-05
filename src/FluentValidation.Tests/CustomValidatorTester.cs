@@ -16,13 +16,13 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests {
-	using System.Linq;
-	using System.Threading.Tasks;
-	using NUnit.Framework;
-	using Results;
+namespace Ext.FluentValidation.Tests {
+    using System.Linq;
+    using Ext.FluentValidation;
+    using Ext.FluentValidation.Results;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class CustomValidatorTester {
 		private TestValidator validator;
 
@@ -42,7 +42,7 @@ namespace FluentValidation.Tests {
 		}
 
 		public void Returns_single_failure_async() {
-			validator.CustomAsync(person => TaskHelpers.FromResult(new ValidationFailure("Surname", "Fail", null)));
+			validator.CustomAsync(person => TaskHelpers.TaskHelpers.FromResult(new ValidationFailure("Surname", "Fail", null)));
 			var result = validator.ValidateAsync(new Person()).Result;
 
 			result.IsValid.ShouldBeFalse();
@@ -61,7 +61,7 @@ namespace FluentValidation.Tests {
 		[Test]
 		public void When_the_async_lambda_returns_null_then_the_validation_should_succeed()
 		{
-			validator.CustomAsync(person => TaskHelpers.FromResult<ValidationFailure>(null));
+			validator.CustomAsync(person => TaskHelpers.TaskHelpers.FromResult<ValidationFailure>(null));
 			var result = validator.ValidateAsync(new Person()).Result;
 
 			result.IsValid.ShouldBeTrue();
@@ -91,8 +91,8 @@ namespace FluentValidation.Tests {
 		public void CustomAsync_within_ruleset()
 		{
 			var validator = new InlineValidator<Person>();
-			validator.RuleSet("foo", () => validator.CustomAsync(x => TaskHelpers.FromResult(new ValidationFailure("x", "y"))));
-			validator.RuleSet("bar", () => validator.CustomAsync(x => TaskHelpers.FromResult(new ValidationFailure("x", "y"))));
+			validator.RuleSet("foo", () => validator.CustomAsync(x => TaskHelpers.TaskHelpers.FromResult(new ValidationFailure("x", "y"))));
+			validator.RuleSet("bar", () => validator.CustomAsync(x => TaskHelpers.TaskHelpers.FromResult(new ValidationFailure("x", "y"))));
 
 			var result = validator.ValidateAsync(new Person(), ruleSet: "foo").Result;
 			result.Errors.Count.ShouldEqual(1);

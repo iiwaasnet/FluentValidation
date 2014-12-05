@@ -16,14 +16,14 @@
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
 
-namespace FluentValidation {
-	using System;
-	using System.Linq;
-	using System.Linq.Expressions;
-	using Internal;
-	using Validators;
+namespace Ext.FluentValidation {
+    using System;
+    using System.Linq;
+    using System.Linq.Expressions;
+    using Internal;
+    using Validators;
 
-	public static class PropertyRuleValidatorExtensions {
+    public static class PropertyRuleValidatorExtensions {
 		/// <summary>
 		/// Replace the first validator of this type and remove all the others.
 		/// </summary>

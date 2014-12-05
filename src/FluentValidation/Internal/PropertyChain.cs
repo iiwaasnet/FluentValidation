@@ -16,14 +16,13 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Internal {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Linq.Expressions;
-	using System.Reflection;
+namespace Ext.FluentValidation.Internal {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq.Expressions;
+    using System.Reflection;
 
-	/// <summary>
+    /// <summary>
 	/// Represents a chain of properties
 	/// </summary>
 	public class PropertyChain {

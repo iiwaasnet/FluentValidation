@@ -16,19 +16,18 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Threading.Tasks;
-	using Internal;
-	using Moq;
-	using NUnit.Framework;
-	using Resources;
-	using Results;
-	using Validators;
+namespace Ext.FluentValidation.Tests {
+    using System;
+    using System.Linq;
+    using Ext.FluentValidation;
+    using Ext.FluentValidation.Internal;
+    using Ext.FluentValidation.Results;
+    using Ext.FluentValidation.Validators;
+    using Moq;
+    using NUnit.Framework;
+    using Resources;
 
-	[TestFixture]
+    [TestFixture]
 	public class RuleBuilderTests {
 		RuleBuilder<Person, string> builder;
 
@@ -141,7 +140,7 @@ namespace FluentValidation.Tests {
 		{
 			var person = new Person { Surname = "Foo" };
 		    var validator = new Mock<AsyncValidatorBase>(MockBehavior.Loose, Messages.predicate_error) {CallBase = true};
-			validator.Setup(v => v.ValidateAsync(It.IsAny<PropertyValidatorContext>())).Returns(TaskHelpers.FromResult(Enumerable.Empty<ValidationFailure>()));
+			validator.Setup(v => v.ValidateAsync(It.IsAny<PropertyValidatorContext>())).Returns(TaskHelpers.TaskHelpers.FromResult(Enumerable.Empty<ValidationFailure>()));
 			builder.SetValidator(validator.Object);
 
 			builder.Rule.ValidateAsync(new ValidationContext<Person>(person, new PropertyChain(), new DefaultValidatorSelector())).Result.ToList();

@@ -16,10 +16,10 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation {
-	using System;
+namespace Ext.FluentValidation {
+    using System;
 
-	/// <summary>
+    /// <summary>
 	/// Gets validators for a particular type.
 	/// </summary>
 	public interface IValidatorFactory {

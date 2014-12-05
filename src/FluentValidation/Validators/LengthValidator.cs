@@ -16,13 +16,12 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Validators {
-	using System;
-	using System.Linq.Expressions;
-	using Attributes;
-	using Resources;
+namespace Ext.FluentValidation.Validators {
+    using System;
+    using System.Linq.Expressions;
+    using Resources;
 
-	public class LengthValidator : PropertyValidator, ILengthValidator {
+    public class LengthValidator : PropertyValidator, ILengthValidator {
 		public int Min { get; private set; }
 		public int Max { get; private set; }
 

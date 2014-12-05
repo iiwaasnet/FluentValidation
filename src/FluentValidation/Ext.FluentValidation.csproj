@@ -8,8 +8,8 @@
     <ProjectGuid>{DAE0249B-4F69-4AC9-9A17-AA23E0795316}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FluentValidation</RootNamespace>
-    <AssemblyName>FluentValidation</AssemblyName>
+    <RootNamespace>Ext.FluentValidation</RootNamespace>
+    <AssemblyName>Ext.FluentValidation</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SignAssembly>false</SignAssembly>
@@ -56,7 +56,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\FluentValidation.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\Ext.FluentValidation.xml</DocumentationFile>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>

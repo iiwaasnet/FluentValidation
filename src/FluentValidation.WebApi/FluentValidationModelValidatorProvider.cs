@@ -16,19 +16,19 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.WebApi
+namespace Ext.FluentValidation.WebApi
 {
-	using System;
-	using System.Collections.Generic;
-	using System.Web.Http;
-	using System.Web.Http.Metadata;
-	using System.Web.Http.Validation;
+    using System;
+    using System.Collections.Generic;
+    using System.Web.Http;
+    using System.Web.Http.Metadata;
+    using System.Web.Http.Validation;
+    using Ext.FluentValidation;
+    using Ext.FluentValidation.Attributes;
+    using Ext.FluentValidation.Internal;
+    using Ext.FluentValidation.Validators;
 
-	using FluentValidation.Attributes;
-	using FluentValidation.Internal;
-	using FluentValidation.Validators;
-
-	public delegate ModelValidator FluentValidationModelValidationFactory(ModelMetadata metadata, IEnumerable<ModelValidatorProvider> validatorProviders, PropertyRule rule, IPropertyValidator validator);
+    public delegate ModelValidator FluentValidationModelValidationFactory(ModelMetadata metadata, IEnumerable<ModelValidatorProvider> validatorProviders, PropertyRule rule, IPropertyValidator validator);
 
 
 	public class FluentValidationModelValidatorProvider : ModelValidatorProvider {

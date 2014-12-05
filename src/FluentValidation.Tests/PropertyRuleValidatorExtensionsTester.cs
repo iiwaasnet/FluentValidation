@@ -16,12 +16,13 @@
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
 
-namespace FluentValidation.Tests {
-	using System.Linq;
-	using NUnit.Framework;
-	using Validators;
+namespace Ext.FluentValidation.Tests {
+    using System.Linq;
+    using Ext.FluentValidation;
+    using Ext.FluentValidation.Validators;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class PropertyRuleValidatorExtensionsTester {
 		AbstractValidator<Person> validator;
 

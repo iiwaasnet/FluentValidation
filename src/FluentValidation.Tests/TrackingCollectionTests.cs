@@ -16,13 +16,13 @@
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
 
-namespace FluentValidation.Tests {
-	using System.Collections.Generic;
-	using Internal;
-	using NUnit.Framework;
-	using System.Linq;
+namespace Ext.FluentValidation.Tests {
+    using System.Collections.Generic;
+    using System.Linq;
+    using Ext.FluentValidation.Internal;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class TrackingCollectionTests {
 		[Test]
 		public void Add_AddsItem() {

@@ -16,13 +16,13 @@
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
 
-namespace FluentValidation {
-	using System;
-	using System.Collections.Generic;
-	using Internal;
-	using Validators;
+namespace Ext.FluentValidation {
+    using System;
+    using System.Collections.Generic;
+    using Internal;
+    using Validators;
 
-	public static class CollectionValidatorExtensions {
+    public static class CollectionValidatorExtensions {
 		/// <summary>
 		/// Associates an instance of IValidator with the current property rule and is used to validate each item within the collection.
 		/// </summary>

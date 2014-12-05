@@ -16,18 +16,18 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation {
-	using System;
-	using System.Collections;
-	using System.Collections.Generic;
-	using System.Linq.Expressions;
-	using System.Text.RegularExpressions;
-	using System.Threading.Tasks;
-	using Internal;
-	using Results;
-	using Validators;
+namespace Ext.FluentValidation {
+    using System;
+    using System.Collections;
+    using System.Linq.Expressions;
+    using System.Text.RegularExpressions;
+    using System.Threading.Tasks;
+    using Internal;
+    using Results;
+    using TaskHelpers;
+    using Validators;
 
-	/// <summary>
+    /// <summary>
 	/// Extension methods that provide the default set of validators.
 	/// </summary>
 	public static class DefaultValidatorExtensions {
@@ -801,7 +801,7 @@ namespace FluentValidation {
 		public static Task ValidateAndThrowAsync<T>(this IValidator<T> validator, T instance) {
 			return validator
 				.ValidateAsync(instance)
-				.Then(r => r.IsValid ? TaskHelpers.Completed() : TaskHelpers.FromError(new ValidationException(r.Errors)));
+				.Then(r => r.IsValid ? TaskHelpers.TaskHelpers.Completed() : TaskHelpers.TaskHelpers.FromError(new ValidationException(r.Errors)));
 		}
 
 		/// <summary>

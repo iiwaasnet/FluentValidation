@@ -16,15 +16,16 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Internal {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Threading.Tasks;
-	using Results;
-	using Validators;
+namespace Ext.FluentValidation.Internal {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Results;
+    using TaskHelpers;
+    using Validators;
 
-	/// <summary>
+    /// <summary>
 	/// Custom IValidationRule for performing custom logic.
 	/// </summary>
 	/// <typeparam name="T"></typeparam>

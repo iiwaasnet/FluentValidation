@@ -16,18 +16,17 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation {
-	using System;
+namespace Ext.FluentValidation {
+    using System;
+    using System.Linq;
+    using System.Linq.Expressions;
+    using System.Reflection;
+    using Internal;
 #if !WINDOWS_PHONE
-	using System.ComponentModel;
-	//using System.ComponentModel.DataAnnotations;
+    //using System.ComponentModel.DataAnnotations;
 #endif
-	using System.Linq;
-	using System.Linq.Expressions;
-	using System.Reflection;
-	using Internal;
 
-	public static class ValidatorOptions {
+    public static class ValidatorOptions {
 		public static CascadeMode CascadeMode = CascadeMode.Continue;
 		public static Type ResourceProviderType;
 

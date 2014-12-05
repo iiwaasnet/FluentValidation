@@ -15,12 +15,12 @@
 // 
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
-namespace FluentValidation.Tests {
-	using System;
-	using System.Globalization;
-	using System.Threading;
+namespace Ext.FluentValidation.Tests {
+    using System;
+    using System.Globalization;
+    using System.Threading;
 
-	public class CultureScope : IDisposable {
+    public class CultureScope : IDisposable {
 		CultureInfo _originalUiCulture;
 		CultureInfo _originalCulture;
 

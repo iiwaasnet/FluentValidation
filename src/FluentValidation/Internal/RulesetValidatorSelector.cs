@@ -1,8 +1,8 @@
-namespace FluentValidation.Internal {
-	using System;
-	using System.Linq;
+namespace Ext.FluentValidation.Internal {
+    using System;
+    using System.Linq;
 
-	/// <summary>
+    /// <summary>
 	/// Selects validators that belong to the specified rulesets.
 	/// </summary>
 	public class RulesetValidatorSelector : IValidatorSelector {

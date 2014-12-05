@@ -16,13 +16,12 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation {
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Reflection;
-	using Validators;
+namespace Ext.FluentValidation {
+    using System.Collections.Generic;
+    using System.Linq;
+    using Validators;
 
-	//TODO: Re-visit this interface for FluentValidation v3. Remove some of the duplication.
+    //TODO: Re-visit this interface for FluentValidation v3. Remove some of the duplication.
 
 	/// <summary>
 	/// Provides metadata about a validator.

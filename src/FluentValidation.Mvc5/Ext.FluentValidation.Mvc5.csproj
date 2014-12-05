@@ -7,8 +7,8 @@
     <ProjectGuid>{23E384EF-5A39-4D73-A8D5-EF48C71C128F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FluentValidation.Mvc</RootNamespace>
-    <AssemblyName>FluentValidation.Mvc</AssemblyName>
+    <RootNamespace>Ext.FluentValidation.Mvc</RootNamespace>
+    <AssemblyName>Ext.FluentValidation.Mvc</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -139,9 +139,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FluentValidation\FluentValidation.csproj">
+    <ProjectReference Include="..\FluentValidation\Ext.FluentValidation.csproj">
       <Project>{DAE0249B-4F69-4AC9-9A17-AA23E0795316}</Project>
-      <Name>FluentValidation</Name>
+      <Name>Ext.FluentValidation</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

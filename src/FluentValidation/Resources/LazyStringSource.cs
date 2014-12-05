@@ -15,10 +15,10 @@
 // 
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
-namespace FluentValidation.Resources {
-	using System;
+namespace Ext.FluentValidation.Resources {
+    using System;
 
-	public class LazyStringSource : IStringSource {
+    public class LazyStringSource : IStringSource {
 		readonly Func<string> _stringProvider;
 
 		public LazyStringSource(Func<string> stringProvider) {

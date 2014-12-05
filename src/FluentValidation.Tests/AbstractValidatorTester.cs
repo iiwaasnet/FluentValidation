@@ -16,15 +16,16 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests {
-	using System;
-	using System.Globalization;
-	using System.Threading;
-	using System.Threading.Tasks;
-	using NUnit.Framework;
-	using Results;
+namespace Ext.FluentValidation.Tests {
+    using System;
+    using System.Globalization;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using Ext.FluentValidation;
+    using Ext.FluentValidation.Results;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class AbstractValidatorTester {
 		TestValidator validator;
 

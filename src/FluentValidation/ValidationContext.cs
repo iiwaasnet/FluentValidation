@@ -16,10 +16,10 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation {
-	using Internal;
+namespace Ext.FluentValidation {
+    using Internal;
 
-	public class ValidationContext<T> : ValidationContext {
+    public class ValidationContext<T> : ValidationContext {
 		public ValidationContext(T instanceToValidate) : this(instanceToValidate, new PropertyChain(), new DefaultValidatorSelector()) {
 			
 		}

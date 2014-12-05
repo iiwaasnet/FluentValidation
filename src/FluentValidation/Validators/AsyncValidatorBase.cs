@@ -1,9 +1,9 @@
-namespace FluentValidation.Validators {
-	using System;
-	using System.Linq.Expressions;
-	using System.Threading.Tasks;
+namespace Ext.FluentValidation.Validators {
+    using System;
+    using System.Linq.Expressions;
+    using System.Threading.Tasks;
 
-	public abstract class AsyncValidatorBase : PropertyValidator {
+    public abstract class AsyncValidatorBase : PropertyValidator {
 		public override bool IsAsync {
 			get { return true; }
 		}

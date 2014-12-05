@@ -16,15 +16,13 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Validators {
-	using System;
-	using System.Collections;
-	using System.Reflection;
-	using Attributes;
-	using Internal;
-	using Resources;
+namespace Ext.FluentValidation.Validators {
+    using System;
+    using System.Collections;
+    using System.Reflection;
+    using Resources;
 
-	public class NotEqualValidator : PropertyValidator, IComparisonValidator {
+    public class NotEqualValidator : PropertyValidator, IComparisonValidator {
 		readonly IEqualityComparer comparer;
 		readonly Func<object, object> func;
 

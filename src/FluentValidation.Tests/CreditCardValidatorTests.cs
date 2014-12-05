@@ -1,10 +1,10 @@
-namespace FluentValidation.Tests {
-	using System.Globalization;
-	using System.Linq;
-	using System.Threading;
-	using NUnit.Framework;
+namespace Ext.FluentValidation.Tests {
+    using System.Globalization;
+    using System.Linq;
+    using System.Threading;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class CreditCardValidatorTests {
 		TestValidator validator;
 

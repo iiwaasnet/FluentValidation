@@ -16,13 +16,12 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Validators {
-	using System;
-	using Attributes;
-	using Internal;
-	using Resources;
+namespace Ext.FluentValidation.Validators {
+    using System;
+    using Internal;
+    using Resources;
 
-	public class InclusiveBetweenValidator : PropertyValidator, IBetweenValidator {
+    public class InclusiveBetweenValidator : PropertyValidator, IBetweenValidator {
 		public InclusiveBetweenValidator(IComparable from, IComparable to) : base(() => Messages.inclusivebetween_error) {
 			To = to;
 			From = from;

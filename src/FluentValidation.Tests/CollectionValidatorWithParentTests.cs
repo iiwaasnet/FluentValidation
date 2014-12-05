@@ -16,16 +16,16 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-using System.Linq;
-
-namespace FluentValidation.Tests
+namespace Ext.FluentValidation.Tests
 {
-	using System;
-	using System.Collections.Generic;
-	using System.Threading.Tasks;
-	using NUnit.Framework;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Ext.FluentValidation;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class CollectionValidatorWithParentTests
 	{
 		Person person;
@@ -206,7 +206,7 @@ namespace FluentValidation.Tests
 
 			private Func<string, Task<bool>> BeOneOfTheChildrensEmailAddress(Person person)
 			{
-				return productName => TaskHelpers.FromResult(person.Children.Any(child => child.Email == productName));
+				return productName => TaskHelpers.TaskHelpers.FromResult(person.Children.Any(child => child.Email == productName));
 			}
 		}
 	}

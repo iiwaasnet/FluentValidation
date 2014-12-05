@@ -4,15 +4,16 @@
 //  </copyright>
 // --------------------------------------------------------------------------
 
-namespace FluentValidation.Validators {
-	using System;
-	using System.Collections;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Threading.Tasks;
-	using FluentValidation.Results;
+namespace Ext.FluentValidation.Validators {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Results;
+    using TaskHelpers;
 
-	public class ChildCollectionValidatorAdaptor : NoopPropertyValidator {
+    public class ChildCollectionValidatorAdaptor : NoopPropertyValidator {
 		static readonly IEnumerable<ValidationFailure> EmptyResult = Enumerable.Empty<ValidationFailure>();
 		static readonly Task<IEnumerable<ValidationFailure>> AsyncEmptyResult = TaskHelpers.FromResult(Enumerable.Empty<ValidationFailure>());
 

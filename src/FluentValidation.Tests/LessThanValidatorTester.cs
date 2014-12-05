@@ -16,17 +16,16 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests {
-	using System;
-	using System.Globalization;
-	using System.Linq;
-	using System.Linq.Expressions;
-	using System.Threading;
-	using Internal;
-	using NUnit.Framework;
-	using Validators;
+namespace Ext.FluentValidation.Tests {
+    using System;
+    using System.Globalization;
+    using System.Linq;
+    using System.Linq.Expressions;
+    using System.Threading;
+    using Ext.FluentValidation.Validators;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class LessThanValidatorTester {
 		int value = 1;
 

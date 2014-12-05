@@ -16,15 +16,16 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests {
-	using System;
-	using System.Collections.Generic;
-	using System.Globalization;
-	using System.Linq;
-	using System.Threading;
-	using NUnit.Framework;
+namespace Ext.FluentValidation.Tests {
+    using System;
+    using System.Collections.Generic;
+    using System.Globalization;
+    using System.Linq;
+    using System.Threading;
+    using Ext.FluentValidation;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class NotEmptyTester {
 		[SetUp]
 		public void Setup() {

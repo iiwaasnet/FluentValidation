@@ -1,8 +1,9 @@
 namespace FluentValidation.Mvc {
 	using System.Web.Mvc;
-	using Results;
+	using Ext.FluentValidation;
+	using Ext.FluentValidation.Results;
 
-	/// <summary>
+    /// <summary>
 	/// Specifies an interceptor that can be used to provide hooks that will be called before and after MVC validation occurs.
 	/// </summary>
 	public interface IValidatorInterceptor {

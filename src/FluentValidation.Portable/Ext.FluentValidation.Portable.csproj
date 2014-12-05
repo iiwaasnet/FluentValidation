@@ -8,8 +8,8 @@
     <ProjectGuid>{C16154BE-8EB7-4CBF-976C-24CCD8BA3B51}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FluentValidation</RootNamespace>
-    <AssemblyName>FluentValidation</AssemblyName>
+    <RootNamespace>Ext.FluentValidation</RootNamespace>
+    <AssemblyName>Ext.FluentValidation</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -23,7 +23,7 @@
     <DefineConstants>TRACE;DEBUG;PORTABLE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\FluentValidation.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\Ext.FluentValidation.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -32,7 +32,7 @@
     <DefineConstants>TRACE;PORTABLE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\FluentValidation.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\Ext.FluentValidation.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->

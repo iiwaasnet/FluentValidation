@@ -16,7 +16,7 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation {
+namespace Ext.FluentValidation {
 	/// <summary>
 	/// Validator implementation that allows rules to be defined without inheriting from AbstractValidator.
 	/// </summary>

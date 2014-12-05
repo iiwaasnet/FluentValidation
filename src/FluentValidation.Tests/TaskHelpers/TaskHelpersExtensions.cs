@@ -1,13 +1,16 @@
 // Copyright (c) Microsoft Open Technologies, Inc. All rights reserved. See License.txt in the project root for license information.
 
-using System.Diagnostics.CodeAnalysis;
-using System.Diagnostics.Contracts;
-using System.Linq.Expressions;
-using System.Reflection;
-
-namespace System.Threading.Tasks
+namespace Ext.FluentValidation.Tests.TaskHelpers
 {
-	internal static class TaskHelpersExtensions
+    using System;
+    using System.Diagnostics.CodeAnalysis;
+    using System.Diagnostics.Contracts;
+    using System.Linq.Expressions;
+    using System.Reflection;
+    using System.Threading;
+    using System.Threading.Tasks;
+
+    internal static class TaskHelpersExtensions
 	{
 		private static readonly Type[] EmptyTypes = new Type[0];
 		private static readonly Task<AsyncVoid> DefaultCompleted = TaskHelpers.FromResult<AsyncVoid>(default(AsyncVoid));

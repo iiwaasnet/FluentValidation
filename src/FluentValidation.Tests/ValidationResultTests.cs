@@ -16,11 +16,11 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests {
-	using NUnit.Framework;
-	using Results;
+namespace Ext.FluentValidation.Tests {
+    using Ext.FluentValidation.Results;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class ValidationResultTests {
 		[SetUp]
 		public void Setup() {

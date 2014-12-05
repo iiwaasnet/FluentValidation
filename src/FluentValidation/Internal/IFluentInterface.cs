@@ -16,11 +16,11 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Internal {
-	using System;
-	using System.ComponentModel;
+namespace Ext.FluentValidation.Internal {
+    using System;
+    using System.ComponentModel;
 
-	//From Kzu's blog: http://www.clariusconsulting.net/blogs/kzu/archive/2008/03/10/58301.aspx
+    //From Kzu's blog: http://www.clariusconsulting.net/blogs/kzu/archive/2008/03/10/58301.aspx
 	[EditorBrowsable(EditorBrowsableState.Never)]
 	public interface IFluentInterface {
 		[EditorBrowsable(EditorBrowsableState.Never)]

@@ -16,15 +16,14 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation {
-	using System;
-	using System.Linq;
-	using System.Linq.Expressions;
-	using Internal;
-	using Resources;
-	using Validators;
+namespace Ext.FluentValidation {
+    using System;
+    using System.Linq;
+    using System.Linq.Expressions;
+    using Internal;
+    using Resources;
 
-	/// <summary>
+    /// <summary>
 	/// Default options that can be used to configure a validator.
 	/// </summary>
 	public static class DefaultValidatorOptions {

@@ -16,11 +16,10 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Resources {
+namespace Ext.FluentValidation.Resources {
+    using System;
 
-	using System;
-
-	/// <summary>
+    /// <summary>
 	/// Provides error message templates
 	/// </summary>
 	public interface IStringSource {

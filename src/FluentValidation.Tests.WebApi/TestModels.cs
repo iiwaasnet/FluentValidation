@@ -15,12 +15,13 @@
 // 
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
-namespace FluentValidation.Tests.WebApi {
-	using System;
-	using Attributes;
-	using Results;
+namespace Ext.FluentValidation.Tests.WebApi {
+    using System;
+    using Ext.FluentValidation;
+    using Ext.FluentValidation.Attributes;
+    using Ext.FluentValidation.Results;
 
-	[Validator(typeof(TestModel5Validator))]
+    [Validator(typeof(TestModel5Validator))]
 	public class TestModel5 {
 		public int Id { get; set; }
 		public bool SomeBool { get; set; }

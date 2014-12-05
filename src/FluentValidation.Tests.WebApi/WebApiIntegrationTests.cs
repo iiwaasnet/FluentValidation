@@ -16,11 +16,10 @@
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
 
-namespace FluentValidation.Tests.WebApi {
-	using System;
-	using NUnit.Framework;
+namespace Ext.FluentValidation.Tests.WebApi {
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class WebApiIntegrationTests : WebApiBaseTest {
 		[Test]
 		public void Should_add_all_erorrs_in_one_go_when_NotEmpty_rule_specified_for_non_nullable_value_type() {

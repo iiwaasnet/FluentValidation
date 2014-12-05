@@ -16,13 +16,13 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation {
-	using System;
-	using System.Collections.Generic;
-	using Results;
-	using System.Linq;
+namespace Ext.FluentValidation {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using Results;
 
-	public class ValidationException : Exception {
+    public class ValidationException : Exception {
 		public IEnumerable<ValidationFailure> Errors { get; private set; }
 
 		public ValidationException(IEnumerable<ValidationFailure> errors) : base(BuildErrorMesage(errors)) {

@@ -16,10 +16,11 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests {
-	using System;
+namespace Ext.FluentValidation.Tests {
+    using System;
+    using Ext.FluentValidation;
 
-	public class TestValidator : InlineValidator<Person> {
+    public class TestValidator : InlineValidator<Person> {
 		public TestValidator() {
 			
 		}

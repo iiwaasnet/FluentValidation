@@ -21,11 +21,12 @@ namespace FluentValidation.Mvc {
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Web.Mvc;
-	using Attributes;
-	using Internal;
-	using Validators;
+	using Ext.FluentValidation;
+	using Ext.FluentValidation.Attributes;
+	using Ext.FluentValidation.Internal;
+	using Ext.FluentValidation.Validators;
 
-	public delegate ModelValidator FluentValidationModelValidationFactory(ModelMetadata metadata, ControllerContext context, PropertyRule rule, IPropertyValidator validator);
+    public delegate ModelValidator FluentValidationModelValidationFactory(ModelMetadata metadata, ControllerContext context, PropertyRule rule, IPropertyValidator validator);
 
 	/// <summary>
 	/// Implementation of ModelValidatorProvider that uses FluentValidation.

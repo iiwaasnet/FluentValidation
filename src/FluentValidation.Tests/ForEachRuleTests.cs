@@ -15,10 +15,11 @@
 // 
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
-namespace FluentValidation.Tests {
-	using NUnit.Framework;
+namespace Ext.FluentValidation.Tests {
+    using Ext.FluentValidation;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class ForEachRuleTests {
 		[Test]
 		public void Executes_rule_for_each_item_in_collection() {

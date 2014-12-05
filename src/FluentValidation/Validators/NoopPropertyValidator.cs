@@ -16,16 +16,15 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Validators {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq.Expressions;
-	using System.Threading.Tasks;
-	using FluentValidation.Internal;
-	using Resources;
-	using Results;
+namespace Ext.FluentValidation.Validators {
+    using System;
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+    using Resources;
+    using Results;
+    using TaskHelpers;
 
-	public abstract class NoopPropertyValidator : IPropertyValidator {
+    public abstract class NoopPropertyValidator : IPropertyValidator {
 		public IStringSource ErrorMessageSource {
 			get { return null; }
 			set { }

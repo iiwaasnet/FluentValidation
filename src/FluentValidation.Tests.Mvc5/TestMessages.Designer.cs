@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FluentValidation.Tests.Mvc5 {
+namespace Ext.FluentValidation.Tests.Mvc5 {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace FluentValidation.Tests.Mvc5 {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("FluentValidation.Tests.Mvc5.TestMessages", typeof(TestMessages).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Ext.FluentValidation.Tests.Mvc5.TestMessages", typeof(TestMessages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

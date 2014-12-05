@@ -16,11 +16,12 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests {
-	using NUnit.Framework;
-	using TestHelper;
+namespace Ext.FluentValidation.Tests {
+    using Ext.FluentValidation;
+    using Ext.FluentValidation.TestHelper;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class ValidatorTesterTester {
 		private TestValidator validator;
 

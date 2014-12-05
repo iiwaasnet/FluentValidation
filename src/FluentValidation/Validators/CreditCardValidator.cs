@@ -16,12 +16,11 @@
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
 
-namespace FluentValidation.Validators {
-	using System.Linq;
-	using Resources;
+namespace Ext.FluentValidation.Validators {
+    using System.Linq;
+    using Resources;
 
-
-	/// <summary>
+    /// <summary>
 	/// Ensures that the property value is a valid credit card number.
 	/// </summary>
 	public class CreditCardValidator : PropertyValidator {

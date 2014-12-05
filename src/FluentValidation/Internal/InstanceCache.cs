@@ -16,11 +16,11 @@
 // The latest version of this file can be found at http://FluentValidation.codeplex.com
 #endregion
 
-namespace FluentValidation.Internal {
-	using System;
-	using System.Collections.Generic;
+namespace Ext.FluentValidation.Internal {
+    using System;
+    using System.Collections.Generic;
 
-	/// <summary>
+    /// <summary>
 	/// Instancace cache.
 	/// TODO: This isn't actually completely thread safe. It would be much better to use ConcurrentDictionary, but this isn't available in Silverlight/WP7.
 	/// </summary>

@@ -1,8 +1,9 @@
-namespace FluentValidation.Tests {
-	using NUnit.Framework;
-	using Results;
+namespace Ext.FluentValidation.Tests {
+    using Ext.FluentValidation;
+    using Ext.FluentValidation.Results;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class InlineValidatorTester {
 		[Test]
 		public void Uses_inline_validator_to_build_rules() {

@@ -16,12 +16,12 @@
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
 
-namespace FluentValidation.Internal {
-	using System;
-	using System.Collections;
-	using System.Collections.Generic;
+namespace Ext.FluentValidation.Internal {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
 
-	public class TrackingCollection<T> : IEnumerable<T> {
+    public class TrackingCollection<T> : IEnumerable<T> {
 		readonly List<T> innerCollection = new List<T>();
 		public event Action<T> ItemAdded;
 

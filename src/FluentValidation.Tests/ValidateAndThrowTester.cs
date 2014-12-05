@@ -16,14 +16,15 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests {
-	using System;
-	using System.Globalization;
+namespace Ext.FluentValidation.Tests {
+    using System;
+    using System.Globalization;
     using System.Linq;
     using System.Threading;
+    using Ext.FluentValidation;
     using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class ValidateAndThrowTester {
 		[SetUp]
 		public void SetUp() {
@@ -91,7 +92,7 @@ namespace FluentValidation.Tests {
 			};
 
 			var ex = typeof(ValidationException).ShouldBeThrownBy(() => validator.ValidateAndThrow(new Person()));
-			ex.ToString().ShouldStartWith("FluentValidation.ValidationException: Validation failed: \r\n -- 'Surname' must not be empty.\r\n -- 'Forename' must not be empty.");
+			ex.ToString().ShouldStartWith("Ext.FluentValidation.ValidationException: Validation failed: \r\n -- 'Surname' must not be empty.\r\n -- 'Forename' must not be empty.");
 		}
 	}
 }

@@ -2,11 +2,12 @@ namespace FluentValidation.Mvc {
 	using System;
 	using System.Collections.Generic;
 	using System.Web.Mvc;
-	using Internal;
-	using Validators;
 	using System.Linq;
+	using Ext.FluentValidation;
+	using Ext.FluentValidation.Internal;
+	using Ext.FluentValidation.Validators;
 
-	public class FluentValidationPropertyValidator : ModelValidator {
+    public class FluentValidationPropertyValidator : ModelValidator {
 		public IPropertyValidator Validator { get; private set; }
 		public PropertyRule Rule { get; private set; }
 

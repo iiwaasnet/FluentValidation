@@ -16,9 +16,9 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Results {
-	using System;
-	using System.Collections.Generic;
+namespace Ext.FluentValidation.Results {
+    using System;
+    using System.Collections.Generic;
 
 #if !SILVERLIGHT && !PORTABLE && !PORTABLE40
 	[Serializable]

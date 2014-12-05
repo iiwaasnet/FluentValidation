@@ -1,8 +1,9 @@
-namespace FluentValidation.Tests {
-	using System.Linq;
-	using NUnit.Framework;
+namespace Ext.FluentValidation.Tests {
+    using System.Linq;
+    using Ext.FluentValidation;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class NameResolutionPluggabilityTester {
 		[Test]
 		public void Uses_custom_property_name() {

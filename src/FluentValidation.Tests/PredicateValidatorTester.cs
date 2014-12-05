@@ -16,15 +16,14 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Tests {
-	using System;
-	using System.Globalization;
-	using System.Linq;
-	using System.Threading;
-	using NUnit.Framework;
-	using Validators;
+namespace Ext.FluentValidation.Tests {
+    using System;
+    using System.Globalization;
+    using System.Linq;
+    using System.Threading;
+    using NUnit.Framework;
 
-	[TestFixture]
+    [TestFixture]
 	public class PredicateValidatorTester {
 		private TestValidator validator;
 

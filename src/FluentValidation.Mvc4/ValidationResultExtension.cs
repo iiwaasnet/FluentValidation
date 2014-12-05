@@ -20,9 +20,9 @@ namespace FluentValidation.Mvc {
 	using System.Collections.Generic;
 	using System.Globalization;
 	using System.Web.Mvc;
-	using Results;
+	using Ext.FluentValidation.Results;
 
-	public static class ValidationResultExtension {
+    public static class ValidationResultExtension {
 		/// <summary>
 		/// Stores the errors in a ValidationResult object to the specified modelstate dictionary.
 		/// </summary>

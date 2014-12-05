@@ -1,4 +1,4 @@
-﻿namespace FluentValidation.WebApi {
+﻿namespace Ext.FluentValidation.WebApi {
     using System;
     using System.Collections.Generic;
     using System.Web.Http.ModelBinding;

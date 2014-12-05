@@ -16,10 +16,10 @@
 // The latest version of this file can be found at http://fluentvalidation.codeplex.com
 #endregion
 
-namespace FluentValidation.Validators {
-	using System.Collections;
-	using Resources;
-	using System.Linq;
+namespace Ext.FluentValidation.Validators {
+    using System.Collections;
+    using System.Linq;
+    using Resources;
 
     public class NotEmptyValidator : PropertyValidator, INotEmptyValidator {
 		readonly object defaultValueForType;
