@@ -152,7 +152,7 @@ namespace FluentValidation.Tests {
 		[Test]
 		public void PropertyDescription_should_return_property_name_split() {
 			var builder = new RuleBuilder<Person, DateTime>(PropertyRule.Create<Person, DateTime>(x => x.DateOfBirth));
-			builder.Rule.GetDisplayName().ShouldEqual("Date Of Birth");
+			builder.Rule.GetDisplayName().ShouldEqual("DateOfBirth");
 		}
 
 		[Test]

@@ -39,13 +39,13 @@ namespace FluentValidation.Tests {
 
 		[Test]
 		public void Should_split_pascal_cased_member_name() {
-			string name = "DateOfBirth".SplitPascalCase();
-			name.ShouldEqual("Date Of Birth");
+			string name = "DateOfBirth".PropertyDisplayName();
+            name.ShouldEqual("DateOfBirth");
 		}
 
 		[Test]
 		public void SplitPascalCase_should_return_null_when_input_is_null() {
-			Extensions.SplitPascalCase(null).ShouldBeNull();
+			Extensions.PropertyDisplayName(null).ShouldBeNull();
 		}
 	}
 }

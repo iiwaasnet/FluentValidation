@@ -199,7 +199,19 @@ namespace FluentValidation.WebApi
 					 For fluent validation we use: CreatePropertyModelName(key, error.MemberName)
 					 This gets the errors group by property
 					*/
-					validationContext.ModelState.AddModelError(isFluentModelValidator ? CreatePropertyModelName(key, error.MemberName) : key, error.Message);
+
+                    var modelState = new ModelState();
+                    var fluentValidationModelError = new FluentValidationModelError(error.Message);
+                    var fluentError = error as FluentValidationModelValidationResult;
+                    if (fluentError != null)
+                    {
+                        fluentValidationModelError.ErrorCode = fluentError.ErrorCode;
+                        fluentValidationModelError.PlaceholderValues = fluentError.PlaceholderValues;
+
+                    }
+                    modelState.Errors.Add(fluentValidationModelError);
+                    validationContext.ModelState.Add(new KeyValuePair<string, ModelState>(isFluentModelValidator ? CreatePropertyModelName(key, error.MemberName) : key, modelState));
+
 					isValid = false;
 				}
 			}

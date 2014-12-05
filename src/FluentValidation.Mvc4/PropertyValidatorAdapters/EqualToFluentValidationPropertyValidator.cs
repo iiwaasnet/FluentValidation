@@ -25,7 +25,7 @@
 
 				var comparisonDisplayName =
 					ValidatorOptions.DisplayNameResolver(Rule.TypeToValidate, propertyToCompare, null)
-					?? propertyToCompare.Name.SplitPascalCase();
+					?? propertyToCompare.Name.PropertyDisplayName();
 
 				var formatter = new MessageFormatter()
 					.AppendPropertyName(Rule.GetDisplayName())

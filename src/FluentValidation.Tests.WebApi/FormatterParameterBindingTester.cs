@@ -220,6 +220,33 @@ namespace FluentValidation.Tests.WebApi {
 			actionContext.ModelState.IsValidField("testModel5.Id").ShouldBeFalse(); //NotEmpty for non-nullable value type
 		}
 
+        [Test]
+        public void Should_add_all_erorrs_with_placeholder_keys_and_values()
+        {
+            actionContext.Request.Content = JsonContent(@"{
+                SomeBool:'false',
+                Id:0}");
+
+            var binder = CreateParameterBinder("testModel5", typeof(TestModel5));
+            binder.ExecuteBindingAsync(modelMetadataProvider, actionContext, new CancellationToken()).Wait();
+
+            actionContext.ModelState.IsValidField("testModel5.SomeBool").ShouldBeFalse(); //Complex rule
+            actionContext.ModelState.IsValidField("testModel5.Id").ShouldBeFalse(); //NotEmpty for non-nullable value type
+
+            var errors = actionContext.ModelState["testModel5.SomeBool"].Errors;
+            Assert.IsTrue(errors.Any(e => ((FluentValidationModelError)e).PlaceholderValues.ContainsKey("PropertyName")));
+            Assert.IsTrue(errors.Any(e => ((FluentValidationModelError)e).PlaceholderValues.ContainsKey("PropertyValue")));
+            Assert.IsTrue(errors.Any(e => ((FluentValidationModelError)e).PlaceholderValues["PropertyName"].ToString() == "SomeBool"));
+            Assert.IsTrue(errors.Any(e => (!(bool)((FluentValidationModelError)e).PlaceholderValues["PropertyValue"])));
+
+            errors = actionContext.ModelState["testModel5.Id"].Errors;
+            Assert.IsTrue(errors.Any(e => ((FluentValidationModelError)e).PlaceholderValues.ContainsKey("PropertyName")));
+            Assert.IsTrue(errors.Any(e => ((FluentValidationModelError)e).PlaceholderValues.ContainsKey("PropertyValue")));
+            Assert.IsTrue(errors.Any(e => ((FluentValidationModelError)e).PlaceholderValues["PropertyName"].ToString() == "Id"));
+            Assert.IsTrue(errors.Any(e => (int)(((FluentValidationModelError)e).PlaceholderValues["PropertyValue"]) == 0));
+        }
+
+
 		[Test]
 		public void When_a_validation_error_occurs_the_error_should_be_added_to_modelstate() {
 			actionContext.Request.Content = JsonContent(@"{

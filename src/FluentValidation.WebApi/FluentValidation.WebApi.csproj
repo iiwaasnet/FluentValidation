@@ -60,6 +60,8 @@
     </Compile>
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="FluentValidationBodyModelValidator.cs" />
+    <Compile Include="FluentValidationModelError.cs" />
+    <Compile Include="FluentValidationModelValidationResult.cs" />
     <Compile Include="FluentValidationModelValidator.cs" />
     <Compile Include="FluentValidationModelValidatorProvider.cs" />
   </ItemGroup>

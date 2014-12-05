@@ -179,7 +179,7 @@ namespace FluentValidation.Internal {
 			get { return propertyName; }
 			set {
 				propertyName = value;
-				propertyDisplayName = propertyName.SplitPascalCase();
+				propertyDisplayName = propertyName.PropertyDisplayName();
 			}
 		}
 

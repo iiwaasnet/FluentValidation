@@ -79,11 +79,8 @@ namespace FluentValidation.Internal {
 		/// <summary>
 		/// Splits pascal case, so "FooBar" would become "Foo Bar"
 		/// </summary>
-		public static string SplitPascalCase(this string input) {
-			if (string.IsNullOrEmpty(input)) {
-				return input;
-			}
-			return Regex.Replace(input, "([A-Z])", " $1").Trim();
+		public static string PropertyDisplayName(this string input) {
+		    return input;
 		}
 		/// <summary>
 		/// Helper method to construct a constant expression from a constant.

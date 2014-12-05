@@ -32,7 +32,8 @@ namespace FluentValidation.Tests {
 		public void When_validation_fails_the_default_error_should_be_set() {
 			string creditcard = "foo";
 			var result = validator.Validate(new Person { CreditCard = creditcard });
-			result.Errors.Single().ErrorMessage.ShouldEqual("'Credit Card' is not a valid credit card number.");
+            result.Errors.Single().ErrorMessage.ShouldEqual("'CreditCard' is not a valid credit card number.");
+
 		}
 
 	}
