@@ -21,10 +21,10 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Security;
 
-[assembly: AssemblyTitle("FluentValidation.WebApi")]
-[assembly: AssemblyDescription("FluentValidation.WebApi")]
-[assembly: AssemblyProduct("FluentValidation.WebApi")]
-[assembly: AssemblyCopyright("Copyright (c) Jeremy Skinner 2008-2014")]
+[assembly: AssemblyTitle("Ext.FluentValidation.WebApi")]
+[assembly: AssemblyDescription("Ext.FluentValidation.WebApi")]
+[assembly: AssemblyProduct("Ext.FluentValidation.WebApi")]
+[assembly: AssemblyCopyright("Copyright (c) Jeremy Skinner 2008-2014, Copyright (c) Sergey Ivasenko 2014")]
 [assembly: ComVisible(false)]
 [assembly: CLSCompliant(true)]
 [assembly: System.Resources.NeutralResourcesLanguage("en")]

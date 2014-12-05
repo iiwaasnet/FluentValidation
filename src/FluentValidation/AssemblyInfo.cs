@@ -21,10 +21,10 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Security;
 
-[assembly: AssemblyTitle("FluentValidation")]
-[assembly: AssemblyDescription("FluentValidation")]
-[assembly: AssemblyProduct("FluentValidation")]
-[assembly: AssemblyCopyright("Copyright (c) Jeremy Skinner 2008-2014")]
+[assembly: AssemblyTitle("Ext.FluentValidation")]
+[assembly: AssemblyDescription("Ext.FluentValidation")]
+[assembly: AssemblyProduct("Ext.FluentValidation")]
+[assembly: AssemblyCopyright("Copyright (c) Jeremy Skinner 2008-2014, Copyright (c) Sergey Ivasenko 2014")]
 #if !PORTABLE && !PORTABLE40
 [assembly: ComVisible(false)]
 #endif
