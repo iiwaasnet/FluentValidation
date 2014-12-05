@@ -4,8 +4,7 @@
     <id>Ext.FluentValidation.MVC5</id>
     <version></version>
 	<title>Ext.FluentValidation.MVC5</title>
-    <authors>Jeremy Skinner</authors>
-    <owners>Sergey Ivasenko</owners>
+    <authors>Sergey Ivasenko</authors>
     <licenseUrl>http://fluentvalidation.codeplex.com/license</licenseUrl>
     <projectUrl>http://fluentvalidation.codeplex.com</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
