@@ -41,6 +41,13 @@ namespace Ext.FluentValidation.Resources {
 			this.accessor = resourceAccessorBuilder.GetResourceAccessor(resourceType, resourceName);
 		}
 
+        public LocalizedStringSource(string resourceName, IResourceAccessorBuilder resourceAccessorBuilder)
+        {
+			this.resourceType = null;
+			this.resourceName = resourceName;
+            this.accessor = resourceAccessorBuilder.GetResourceAccessor(resourceType, resourceName);
+		}
+
 		/// <summary>
 		/// Creates an IErrorMessageSource from an expression: () => MyResources.SomeResourceName
 		/// </summary>

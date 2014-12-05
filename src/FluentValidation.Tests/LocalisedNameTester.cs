@@ -17,6 +17,7 @@
 #endregion
 
 namespace Ext.FluentValidation.Tests {
+    using System;
     using System.ComponentModel.DataAnnotations;
     using System.Linq;
     using Ext.FluentValidation;
@@ -39,6 +40,16 @@ namespace Ext.FluentValidation.Tests {
 
 			var result = validator.Validate(new Person());
 			result.Errors.Single().ErrorMessage.ShouldEqual("'foo' must not be empty.");
+		}
+        
+        [Test]
+		public void ErrorCode_equals_resourceSelector() {
+			var validator = new TestValidator {
+				v => v.RuleFor(x => x.Surname).NotNull().WithLocalizedMessage("ErrorCode", new TestResourceAccessorBuilder())
+			};
+
+			var result = validator.Validate(new Person());
+            result.Errors.Single().ErrorCode.ShouldEqual("ErrorCode");
 		}
 
 		[Test]
@@ -100,4 +111,10 @@ namespace Ext.FluentValidation.Tests {
 			}
 		}
 	}
+
+    public class TestResourceAccessorBuilder : IResourceAccessorBuilder {
+        public Func<string> GetResourceAccessor(Type resourceType, string resourceName) {
+            return () => resourceName;
+        }
+    }
 }

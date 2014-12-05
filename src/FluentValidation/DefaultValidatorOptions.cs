@@ -170,7 +170,23 @@ namespace Ext.FluentValidation {
 			});
 		}
 
-		
+        /// <summary>
+        /// Specifies a custom error message resource to use when validation fails.
+        /// </summary>
+        /// <param name="rule">The current rule</param>
+        /// <param name="resourceSelector">The resource to use as an expression, eg () => Messages.MyResource</param>
+        /// <param name="resourceAccessorBuilder">The resource accessor builder to use. </param>
+        /// <returns></returns>
+        public static IRuleBuilderOptions<T, TProperty> WithLocalizedMessage<T, TProperty>(this IRuleBuilderOptions<T, TProperty> rule, string resourceSelector, IResourceAccessorBuilder resourceAccessorBuilder)
+        {
+            resourceSelector.Guard("A resource selector must be specified.");
+            resourceAccessorBuilder.Guard("A resourceAccessorBuilder must be specified.");
+
+            return rule.Configure(config =>
+            {
+                config.CurrentValidator.ErrorMessageSource = new LocalizedStringSource(resourceSelector, resourceAccessorBuilder);
+            });
+        }
 
 		/// <summary>
 		/// Specifies a condition limiting when the validator should run. 
@@ -230,6 +246,7 @@ namespace Ext.FluentValidation {
 				config.DisplayName = LocalizedStringSource.CreateFromExpression(resourceSelector, resourceAccessorBuilder);
 			});
 		}
+        
 
 		/// <summary>
 		/// Overrides the name of the property associated with this rule.
