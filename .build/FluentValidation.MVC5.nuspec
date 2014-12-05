@@ -1,17 +1,18 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>FluentValidation.MVC5</id>
+    <id>Ext.FluentValidation.MVC5</id>
     <version></version>
+	<title>Ext.FluentValidation.MVC5</title>
     <authors>Jeremy Skinner</authors>
+    <owners>Sergey Ivasenko</owners>
     <licenseUrl>http://fluentvalidation.codeplex.com/license</licenseUrl>
     <projectUrl>http://fluentvalidation.codeplex.com</projectUrl>
-    <iconUrl>http://download.codeplex.com/Project/Download/FileDownload.aspx?ProjectName=FluentValidation&amp;DownloadId=166226</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>ASP.NET MVC 5 integration for FluentValidation</description>
-    <summary>ASP.NET MVC 5 integration for FluentValidation</summary>
+    <description>Fork of the ASP.NET MVC 5 integration for FluentValidation originaly developed by Jeremy Skinner.</description>
+    <summary>Fork of the ASP.NET MVC 5 integration for FluentValidation originaly developed by Jeremy Skinner</summary>
     <language>en-US</language>
-    <releaseNotes>https://github.com/JeremySkinner/FluentValidation/blob/master/Changelog.txt</releaseNotes>
+    <releaseNotes>https://github.com/iiwaasnet/FluentValidation/blob/master/Changelog.txt</releaseNotes>
     <dependencies>
       <dependency id="FluentValidation" version="" />
 			<dependency id="Microsoft.AspNet.Mvc" version="[5.1,5.3)" />

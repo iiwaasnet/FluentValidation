@@ -17,10 +17,10 @@
 		
 		<ItemGroup>
 			<MainBinaries Include="$(BaseDir)\src\FluentValidation\bin\$(Configuration)$(PackageSuffix)\**\*.*" />
-			<Mvc5Binaries Include="$(BaseDir)\src\FluentValidation.Mvc5\bin\$(Configuration)$(PackageSuffix)\FluentValidation.Mvc.*" />
+			<Mvc5Binaries Include="$(BaseDir)\src\FluentValidation.Mvc5\bin\$(Configuration)$(PackageSuffix)\Ext.FluentValidation.Mvc.*" />
 			<PortableBinaries Include="$(BaseDir)\src\FluentValidation.Portable\bin\$(Configuration)$(PackageSuffix)\**\*.*" />
 			<Portable40Binaries Include="$(BaseDir)\src\FluentValidation.Portable40\bin\$(Configuration)$(PackageSuffix)\**\*.*" />
-			<WebApiBinaries Include="$(BaseDir)\src\FluentValidation.WebApi\bin\$(Configuration)$(PackageSuffix)\FluentValidation.WebApi.*" />
+			<WebApiBinaries Include="$(BaseDir)\src\FluentValidation.WebApi\bin\$(Configuration)$(PackageSuffix)\Ext.FluentValidation.WebApi.*" />
 			
 			<Docs Include="$(BaseDir)\Changelog.txt;$(BaseDir)\License.txt" />
 		</ItemGroup>
@@ -59,15 +59,15 @@
 		<Copy SourceFiles="@(WebApiBinaries)" DestinationFolder="$(PackageDir)\temp\FluentValidation.WebApi$(PackageSuffix)\lib\Net45" />
 		
 		<!-- Get the version number of the main FV assembly to insert into the nuspec files -->
-		<GetAssemblyIdentity AssemblyFiles="$(OutputDir)\FluentValidation\FluentValidation.dll">
+		<GetAssemblyIdentity AssemblyFiles="$(OutputDir)\FluentValidation\Ext.FluentValidation.dll">
 			<Output TaskParameter="Assemblies" ItemName="AsmInfo" />
 		</GetAssemblyIdentity>
 
-		<GetAssemblyIdentity AssemblyFiles="$(OutputDir)\Mvc\Mvc5\FluentValidation.Mvc.dll">
+		<GetAssemblyIdentity AssemblyFiles="$(OutputDir)\Mvc\Mvc5\Ext.FluentValidation.Mvc.dll">
 			<Output TaskParameter="Assemblies" ItemName="Mvc5AsmInfo" />
 		</GetAssemblyIdentity>
 
-		<GetAssemblyIdentity AssemblyFiles="$(OutputDir)\WebApi\FluentValidation.WebApi.dll">
+		<GetAssemblyIdentity AssemblyFiles="$(OutputDir)\WebApi\Ext.FluentValidation.WebApi.dll">
 			<Output TaskParameter="Assemblies" ItemName="WebApiAsmInfo" />
 		</GetAssemblyIdentity>
 

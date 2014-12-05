@@ -1,17 +1,18 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>FluentValidation.WebApi</id>
+    <id>Ext.FluentValidation.WebApi</id>
     <version></version>
+	<title>Ext.FluentValidation.WebApi</title>
     <authors>Jeremy Skinner</authors>
+	<owners>Sergey Ivasenko</owners>
     <licenseUrl>http://fluentvalidation.codeplex.com/license</licenseUrl>
     <projectUrl>http://fluentvalidation.codeplex.com</projectUrl>
-    <iconUrl>http://download.codeplex.com/Project/Download/FileDownload.aspx?ProjectName=FluentValidation&amp;DownloadId=166226</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>ASP.NET Web API integration for FluentValidation</description>
-    <summary>ASP.NET Web API integration for FluentValidation</summary>
+    <description>Fork of the ASP.NET Web API integration for FluentValidation originaly developed by Jeremy Skinner.</description>
+    <summary>Fork of the ASP.NET Web API integration for FluentValidation originaly developed by Jeremy Skinner.</summary>
     <language>en-US</language>
-    <releaseNotes>https://github.com/JeremySkinner/FluentValidation/blob/master/Changelog.txt</releaseNotes>
+    <releaseNotes>https://github.com/iiwaasnet/FluentValidation/blob/master/Changelog.txt</releaseNotes>
     <dependencies>
       <dependency id="FluentValidation" version="" />
 			<dependency id="Microsoft.AspNet.WebApi.Core" version="[5.1,5.3)" />

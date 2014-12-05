@@ -3,7 +3,7 @@
 		<BaseDir>$(MSBuildProjectDirectory)\..</BaseDir>
 		<Configuration Condition="'$(Configuration)'==''" >Release</Configuration>
 		<BuildDir>$(BaseDir)\build</BuildDir>
-		<SolutionFile>$(BaseDir)\FluentValidation.sln</SolutionFile>
+		<SolutionFile>$(BaseDir)\Ext.FluentValidation.sln</SolutionFile>
 		<TestAssemblies>
 			$(BaseDir)\src\FluentValidation.Tests\bin\$(Configuration)\FluentValidation.Tests.dll;
 			$(BaseDir)\src\FluentValidation.Tests.Mvc5\bin\$(Configuration)\FluentValidation.Tests.Mvc5.dll;
