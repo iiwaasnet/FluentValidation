@@ -114,7 +114,7 @@ namespace Ext.FluentValidation.Tests {
 
     public class TestResourceAccessorBuilder : IResourceAccessorBuilder {
         public Func<string> GetResourceAccessor(Type resourceType, string resourceName) {
-            return () => resourceName;
+            return () => resourceName + "_Message";
         }
     }
 }
