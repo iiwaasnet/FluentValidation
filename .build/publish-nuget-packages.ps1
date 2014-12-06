@@ -4,7 +4,7 @@ $nugetpath = resolve-path "$scriptpath/../.nuget/nuget.exe"
 $packagespath = resolve-path "$scriptpath/../build/packages"
 
 if(-not (test-path $keyfile)) {
-  throw "Could not find the NuGet access key at $keyfile. If you're not Jeremy, you shouldn't be running this script!"
+  throw "Could not find the NuGet access key at $keyfile."
 }
 else {
   pushd $packagespath

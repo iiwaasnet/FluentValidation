@@ -33,7 +33,8 @@
   <Target Name="Deploy">
     <RemoveDir Directories="$(BuildDir)" />
 		
-		<MSBuild Projects="Deployment.proj" Properties="Configuration=$(Configuration)" />
-    <MSBuild Projects="Deployment.proj" Properties="Configuration=$(Configuration);PackageSuffix=-signed" />
+	<MSBuild Projects="Deployment.proj" Properties="Configuration=$(Configuration)" />
+    <MSBuild Projects="Deployment.proj" Properties="Configuration=$(Configuration)" />
+	<!--<MSBuild Projects="Deployment.proj" Properties="Configuration=$(Configuration);PackageSuffix=-signed" />-->
   </Target>
 </Project>

@@ -3,7 +3,7 @@
     <BaseDir>$(MSBuildProjectDirectory)\..</BaseDir>
     <BuildDir>$(BaseDir)\build</BuildDir>
     <PackageDir>$(BuildDir)\Packages</PackageDir>
-    <PackageSuffix Condition="'$(PackageSuffix)'!=''"></PackageSuffix>
+    <!--<PackageSuffix Condition="'$(PackageSuffix)'!=''"></PackageSuffix>-->
     <OutputDir>$(BuildDir)\$(Configuration)$(PackageSuffix)</OutputDir>
     <MSBuildExtensions>$(BaseDir)\.build\msbuild.community.tasks.dll</MSBuildExtensions>
   </PropertyGroup>
