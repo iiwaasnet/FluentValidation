@@ -45,9 +45,27 @@ namespace Ext.FluentValidation.Tests.WebApi {
 
 	public class TestModelValidator : AbstractValidator<TestModel> {
 		public TestModelValidator() {
-			RuleFor(x => x.Name).NotNull().WithMessage("Validation Failed");
+			RuleFor(x => x.Name)
+                .NotNull().WithMessage("Validation Failed");
 		}
 	}
+
+
+    [Validator(typeof(TestModelValidator9))]
+	public class TestModel9 {
+		public string Name { get; set; }
+	}
+
+	public class TestModelValidator9 : AbstractValidator<TestModel9> {
+        public TestModelValidator9()
+        {
+            //RuleFor(x => x.Name)
+            //    .NotNull().WithMessage("Should not be null")
+            //    .Must((s) => s == "Bla").WithMessage("Should equal 'Bla'");
+		}
+	}
+
+
 
 	[Validator(typeof(TestModelValidator3))]
 	public class TestModel3 {
@@ -81,6 +99,7 @@ namespace Ext.FluentValidation.Tests.WebApi {
 				.EmailAddress();
 
 			RuleFor(x => x.Address1).NotEmpty();
+			RuleFor(x => x.Email).NotEmpty();
 		}
 	}
 

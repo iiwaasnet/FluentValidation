@@ -93,5 +93,8 @@ namespace Ext.FluentValidation.Tests.WebApi {
 		public static string GetMessage(this List<SimpleError> list, string property) {
 			return list.Where(x => x.Property == property).Select(x => x.Message).FirstOrDefault();
 		}
+        public static IEnumerable<string> GetMessages(this List<SimpleError> list, string property) {
+			return list.Where(x => x.Property == property).Select(x => x.Message);
+		}
 	}
 }
