@@ -59,9 +59,9 @@ namespace Ext.FluentValidation.Tests.WebApi {
 	public class TestModelValidator9 : AbstractValidator<TestModel9> {
         public TestModelValidator9()
         {
-            //RuleFor(x => x.Name)
-            //    .NotNull().WithMessage("Should not be null")
-            //    .Must((s) => s == "Bla").WithMessage("Should equal 'Bla'");
+            RuleFor(x => x.Name)
+                .NotNull().WithMessage("Should not be null")
+                .Must((s) => s == "Bla").WithMessage("Should equal 'Bla'");
 		}
 	}
 

@@ -61,6 +61,11 @@ namespace Ext.FluentValidation.Tests.WebApi {
 			return OutputErrors();
 		}
 
+        [HttpPost]
+		public IHttpActionResult TestModel9(TestModel9 model) {
+			return OutputErrors();
+		}
+
 		[HttpPost]
 		public IHttpActionResult TestModelWithoutValidator(TestModelWithoutValidator model) {
 			return OutputErrors();

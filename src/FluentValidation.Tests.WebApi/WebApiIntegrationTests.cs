@@ -54,7 +54,7 @@ namespace Ext.FluentValidation.Tests.WebApi {
 		public void When_two_validators_fails_for_same_property_two_validation_errors_should_be_added_to_modelstate() {
 			var result = InvokeTest<TestModel9>(@"Name=");
             Assert.IsTrue(result.GetMessages("model.Name").Contains("Should not be null"));
-            Assert.IsTrue(result.GetMessage("model.Name").Contains("Should equal 'Bla'"));
+            Assert.IsTrue(result.GetMessages("model.Name").Contains("Should equal 'Bla'"));
 		}
 
 		[Test]
